@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Townsville_Jazz_Club
+ * @package Baizonn_Learning_Center
  */
 
 ?>

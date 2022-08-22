@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  * @todo MODIFY AS PER THEME
- * @package Baizzon Learning Center
+ * @package Baizonn Learning Center
  */
 
 $error_img = get_theme_mod( '404_image', get_template_directory_uri() . '/assets/img/404.png' );

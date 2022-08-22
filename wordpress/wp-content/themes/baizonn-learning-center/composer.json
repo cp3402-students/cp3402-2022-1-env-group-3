@@ -8,12 +8,10 @@
     ],
     "homepage": "https://github.com/Automattic/_s",
     "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "Contributors",
-            "homepage": "https://github.com/Automattic/_s/graphs/contributors"
-        }
-    ],
+    "authors": [{
+        "name": "Contributors",
+        "homepage": "https://github.com/Automattic/_s/graphs/contributors"
+    }],
     "require": {
         "php": ">=5.6"
     },

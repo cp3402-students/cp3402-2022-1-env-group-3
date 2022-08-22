@@ -2,7 +2,7 @@
 /**
  * Townsville Jazz Club Theme Customizer
  *
- * @package Townsville_Jazz_Club
+ * @package Baizonn_Learning_Center
  */
 
 /**
