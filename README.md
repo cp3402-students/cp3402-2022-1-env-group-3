@@ -1,4 +1,4 @@
-<section class="section"><h1 id="title">Quickstart: Compose and WordPress</h1><p><em class="reading-time">Estimated reading time: 4 minutes</em></p>
+<section class="section"><h1 id="title">Quickstart: Compose and WordPress</h1>
                             <p>You can use Docker Compose to easily run WordPress in an isolated environment
 built with Docker containers. This quick-start guide demonstrates how to use
 Compose to set up and run WordPress. Before starting, make sure you have
