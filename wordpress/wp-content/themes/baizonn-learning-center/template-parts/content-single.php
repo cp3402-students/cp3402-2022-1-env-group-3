@@ -35,5 +35,5 @@
     <div class="social-wrap">
         <?php echo get_the_tag_list( '<div class="tag-list"><ul>', ' ', '</ul></div>' ); ?>
     </div>
-    <?php education_center_author_box(); ?>
+    <?php baizonn_learning_center_author_box(); ?>
 </article>

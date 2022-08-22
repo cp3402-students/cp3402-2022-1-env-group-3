@@ -4,14 +4,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package education_center
+ * @package Baizzon Learning Center
  */
 
 get_header(); ?>
 
 	<div class="content-area" id="primary">
         <div class="container">
-			<?php education_center_author_box(); ?>
+			<?php baizonn_learning_center_author_box(); ?>
 			<div class="page-grid">
 				<div id="main" class="site-main">
 					<div class="grid-layout-wrap layout-col-2">

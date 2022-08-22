@@ -608,11 +608,11 @@ function education_center_get_fallback_svg( $post_thumbnail ) {
 }
 endif;
 
-if( ! function_exists( 'education_center_author_box' ) ) :
+if( ! function_exists( 'baizonn_learning_center_author_box' ) ) :
     /**
      * Author Box for Single Post and Archive Page
      */
-    function education_center_author_box(){ 
+    function baizonn_learning_center_author_box(){ 
         if( is_single() ){
             $ed_post_author = get_theme_mod( 'ed_post_author' );
         }else{
