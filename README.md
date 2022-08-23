@@ -2,7 +2,7 @@
                             <p>You can use Docker Compose to easily run WordPress in an isolated environment
 built with Docker containers. This quick-start guide demonstrates how to use
 Compose to set up and run WordPress. Before starting, make sure you have
-<a href="/compose/install/">Compose installed</a>.</p>
+<a href="https://docs.docker.com/compose/install/">Compose installed</a>.</p>
 <h3 id="build-the-project">Build the project<a href="#build-the-project" class="anchorLink">🔗</a></h3>
 <p>Now, run <code class="language-plaintext highlighter-rouge">docker compose up -d</code> from your project directory.</p>
 <p>This runs <a href="/engine/reference/commandline/compose_up/"><code class="language-plaintext highlighter-rouge">docker compose up</code></a> in detached mode, pulls
