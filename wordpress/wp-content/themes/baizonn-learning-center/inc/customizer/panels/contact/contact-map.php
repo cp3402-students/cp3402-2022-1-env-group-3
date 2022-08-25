@@ -11,7 +11,7 @@ function education_center_customize_register_map( $wp_customize ) {
     $wp_customize->add_section(
         'google_map_settings',
         array(
-            'title'    => __( 'Google Map Section', 'education-center' ),
+            'title'    => __( 'Google Map Section', 'baizonn-learning-center' ),
             'priority' => 30,
             'panel'    => 'contact_page_settings',
         )
@@ -32,8 +32,8 @@ function education_center_customize_register_map( $wp_customize ) {
             'ed_googlemap',
             array(
                 'section'       => 'google_map_settings',
-                'label'         => __( 'Google Map Settings', 'education-center' ),
-                'description'   => __( 'Disable to hide the Google Map Settings', 'education-center' ),
+                'label'         => __( 'Google Map Settings', 'baizonn-learning-center' ),
+                'description'   => __( 'Disable to hide the Google Map Settings', 'baizonn-learning-center' ),
             )
         )
     );
@@ -50,7 +50,7 @@ function education_center_customize_register_map( $wp_customize ) {
         'contact_google_map_iframe',
         array(
             'section'         => 'google_map_settings',
-            'label'           => __( 'Embeded Google Map', 'education-center' ),
+            'label'           => __( 'Embeded Google Map', 'baizonn-learning-center' ),
             'type'            => 'text',
         )
     );

@@ -9,7 +9,7 @@ function education_center_contact_page_form( $wp_customize ){
     
 	$wp_customize->add_section( 'contact_page_form', 
 	    array(
-	        'title'         => esc_html__( 'Contact Form Section', 'education-center' ),
+	        'title'         => esc_html__( 'Contact Form Section', 'baizonn-learning-center' ),
 	        'priority'      => 20,
             'panel'         => 'contact_page_settings',
 	    ) 
@@ -28,7 +28,7 @@ function education_center_contact_page_form( $wp_customize ){
 		'contact_form_title',
 		array(
 			'section'           => 'contact_page_form',
-			'label'             => __( 'Contact Form Title', 'education-center' ),
+			'label'             => __( 'Contact Form Title', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -51,7 +51,7 @@ function education_center_contact_page_form( $wp_customize ){
 		'contact_form_subtitle',
 		array(
 			'section'           => 'contact_page_form',
-			'label'             => __( 'Contact Form Title', 'education-center' ),
+			'label'             => __( 'Contact Form Title', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -73,8 +73,8 @@ function education_center_contact_page_form( $wp_customize ){
 		'contact_form_shortcode',
 		array(
 			'section'           => 'contact_page_form',
-			'label'             => __( 'Contact Form Shortcode', 'education-center' ),
-            'description'       => __( 'Please generate the shortcode from contact form 7 widget', 'education-center' ),
+			'label'             => __( 'Contact Form Shortcode', 'baizonn-learning-center' ),
+            'description'       => __( 'Please generate the shortcode from contact form 7 widget', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);

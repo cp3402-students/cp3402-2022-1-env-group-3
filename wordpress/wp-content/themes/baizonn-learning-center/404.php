@@ -20,15 +20,15 @@ get_header(); ?>
 					</figure>
 					<header class="page-header">
 						<h1 class="page-title">
-							<?php esc_html_e( 'Sorry We Can`t Find That Page!', 'education-center' ); ?>
+							<?php esc_html_e( 'Sorry We Can`t Find That Page!', 'baizonn-learning-center' ); ?>
 						</h1>
 						<div class="subtitle">
-							<p><?php esc_html_e( 'The page you are looking for was moved, removed, renamed or never existed.', 'education-center' ); ?></p>
+							<p><?php esc_html_e( 'The page you are looking for was moved, removed, renamed or never existed.', 'baizonn-learning-center' ); ?></p>
 						</div>
 						<div class="error404-search">
 							<?php get_search_form(); ?>
 						</div>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-lg btn-primary"><?php esc_html_e( 'Take Me Home', 'education-center' ); ?></a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-lg btn-primary"><?php esc_html_e( 'Take Me Home', 'baizonn-learning-center' ); ?></a>
 					</header><!-- .page-header -->
 				</section><!-- .error-404 -->
 			</main><!-- #main -->

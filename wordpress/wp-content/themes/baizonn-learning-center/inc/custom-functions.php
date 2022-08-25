@@ -24,9 +24,9 @@ if ( ! function_exists( 'education_center_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on education Center, use a find and replace
-		 * to change 'education-center' to the name of your theme in all the template files.
+		 * to change 'baizonn-learning-center' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'education-center', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'baizonn-learning-center', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -49,7 +49,7 @@ if ( ! function_exists( 'education_center_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary-menu' 	 => esc_html__( 'Primary', 'education-center' ),
+				'primary-menu' 	 => esc_html__( 'Primary', 'baizonn-learning-center' ),
 			)
 		);
 
@@ -121,9 +121,9 @@ if ( ! function_exists( 'education_center_setup' ) ) :
 		// This was removed in WordPress 5.6 but is still required to properly support WP 5.5.
 		add_theme_support( 'custom-units' );
 
-		add_image_size( 'education-center-featured-posts', 440, 304, true );
-		add_image_size( 'education-center-search', 439, 303, true );
-		add_image_size( 'education-center-slider', 1920, 853, true );
+		add_image_size( 'baizonn-learning-center-featured-posts', 440, 304, true );
+		add_image_size( 'baizonn-learning-center-search', 439, 303, true );
+		add_image_size( 'baizonn-learning-center-slider', 1920, 853, true );
 
 	}
 endif;
@@ -166,21 +166,21 @@ if( ! function_exists( 'education_center_scripts' ) ) :
 		$build  = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '/build' : '';
 		$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
-		wp_enqueue_style( 'education-center-google-fonts', education_center_google_fonts_url(), array(), null );
-		wp_enqueue_style( 'education-center-style', get_stylesheet_uri(), array(), EDUCATION_CENTER_THEME_VERSION );
-		wp_style_add_data( 'education-center-style', 'rtl', 'replace' );
+		wp_enqueue_style( 'baizonn-learning-center-google-fonts', education_center_google_fonts_url(), array(), null );
+		wp_enqueue_style( 'baizonn-learning-center-style', get_stylesheet_uri(), array(), EDUCATION_CENTER_THEME_VERSION );
+		wp_style_add_data( 'baizonn-learning-center-style', 'rtl', 'replace' );
 		
-		wp_enqueue_script( 'education-center-accessibility', get_template_directory_uri() . '/assets/js' . $build . '/modal-accessibility' . $suffix . '.js', array(), EDUCATION_CENTER_THEME_VERSION, true );
-		wp_enqueue_script( 'education-center-navigation', get_template_directory_uri() . '/inc/js/navigation.js', array(), EDUCATION_CENTER_THEME_VERSION, true );
+		wp_enqueue_script( 'baizonn-learning-center-accessibility', get_template_directory_uri() . '/assets/js' . $build . '/modal-accessibility' . $suffix . '.js', array(), EDUCATION_CENTER_THEME_VERSION, true );
+		wp_enqueue_script( 'baizonn-learning-center-navigation', get_template_directory_uri() . '/inc/js/navigation.js', array(), EDUCATION_CENTER_THEME_VERSION, true );
 
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 		
-		wp_enqueue_script( 'education-center-custom', get_template_directory_uri() . '/assets/js' . $build . '/custom' . $suffix . '.js',  array( 'jquery' ), EDUCATION_CENTER_THEME_VERSION, true );
+		wp_enqueue_script( 'baizonn-learning-center-custom', get_template_directory_uri() . '/assets/js' . $build . '/custom' . $suffix . '.js',  array( 'jquery' ), EDUCATION_CENTER_THEME_VERSION, true );
 			
 		wp_localize_script( 
-			'education-center-custom', 
+			'baizonn-learning-center-custom', 
 			'ecp_data',
 			array(
 				'url'            => admin_url( 'admin-ajax.php' ),
@@ -198,7 +198,7 @@ if( ! function_exists( 'education_center_admin_scripts' ) ) :
 	 */
 	function education_center_admin_scripts( $hook_suffix ) {
 
-		wp_enqueue_style( 'education-center-admin-style',get_template_directory_uri().'/inc/css/admin.css', EDUCATION_CENTER_THEME_VERSION, 'screen' );
+		wp_enqueue_style( 'baizonn-learning-center-admin-style',get_template_directory_uri().'/inc/css/admin.css', EDUCATION_CENTER_THEME_VERSION, 'screen' );
 	}
 add_action( 'admin_enqueue_scripts', 'education_center_admin_scripts' );
 endif;
@@ -273,17 +273,17 @@ if( ! function_exists( 'education_center_change_comment_form_default_fields' ) )
 		$req      = get_option( 'require_name_email' );
 		$aria_req = ( $req ? " aria-required='true'" : '' );
 		$required = ( $req ? " required" : '' );
-		$author   = ( $req ? __( 'Name*', 'education-center' ) : __( 'Name', 'education-center' ) );
-		$email    = ( $req ? __( 'Email*', 'education-center' ) : __( 'Email', 'education-center' ) );
+		$author   = ( $req ? __( 'Name*', 'baizonn-learning-center' ) : __( 'Name', 'baizonn-learning-center' ) );
+		$email    = ( $req ? __( 'Email*', 'baizonn-learning-center' ) : __( 'Email', 'baizonn-learning-center' ) );
 	 
 		// Change just the author field
-		$fields['author'] = '<div class=form-grid><p class="comment-form-author-name"><label class="screen-reader-text" for="author">' . esc_html__( 'Name', 'education-center' ) . '<span class="required">*</span></label><input id="author" name="author" placeholder="' . esc_attr( $author ) . '" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . $required . ' /></p>';
+		$fields['author'] = '<div class=form-grid><p class="comment-form-author-name"><label class="screen-reader-text" for="author">' . esc_html__( 'Name', 'baizonn-learning-center' ) . '<span class="required">*</span></label><input id="author" name="author" placeholder="' . esc_attr( $author ) . '" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . $required . ' /></p>';
 		
-		$fields['email'] = '<p class="comment-form-author-email"><label class="screen-reader-text" for="email">' . esc_html__( 'Email', 'education-center' ) . '<span class="required">*</span></label><input id="email" name="email" placeholder="' . esc_attr( $email ) . '" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . $required. ' /></p>';
+		$fields['email'] = '<p class="comment-form-author-email"><label class="screen-reader-text" for="email">' . esc_html__( 'Email', 'baizonn-learning-center' ) . '<span class="required">*</span></label><input id="email" name="email" placeholder="' . esc_attr( $email ) . '" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . $required. ' /></p>';
 		
-		$fields['url'] = '<p class="comment-form-url"><label class="screen-reader-text" for="url">' . esc_html__( 'Website', 'education-center' ) . '</label><input id="url" name="url" placeholder="' . esc_attr__( 'Website', 'education-center' ) . '" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p></div>'; 
+		$fields['url'] = '<p class="comment-form-url"><label class="screen-reader-text" for="url">' . esc_html__( 'Website', 'baizonn-learning-center' ) . '</label><input id="url" name="url" placeholder="' . esc_attr__( 'Website', 'baizonn-learning-center' ) . '" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p></div>'; 
 		
-		$fields['cookies'] = '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><span class="checkmark"></span><label for="wp-comment-cookies-consent">' . esc_html__( 'Save my name, email, and website in this browser for the next time I comment.', 'education-center' ) . '</label></p>'; 
+		$fields['cookies'] = '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><span class="checkmark"></span><label for="wp-comment-cookies-consent">' . esc_html__( 'Save my name, email, and website in this browser for the next time I comment.', 'baizonn-learning-center' ) . '</label></p>'; 
 
 		return $fields;    
 	}
@@ -296,7 +296,7 @@ if( ! function_exists( 'education_center_change_comment_form_defaults' ) ) :
 	 * https://blog.josemcastaneda.com/2016/08/08/copy-paste-hurting-theme/
 	*/
 	function education_center_change_comment_form_defaults( $defaults ){    
-		$defaults['comment_field'] = '<p class="comment-form-content"><label class="screen-reader-text" for="comment">' . esc_html__( 'Comment', 'education-center' ) . '</label><textarea id="comment" name="comment" placeholder="' . esc_attr__( 'Comment*', 'education-center' ) . '" cols="40" rows="8" aria-required="true" required></textarea></p>';
+		$defaults['comment_field'] = '<p class="comment-form-content"><label class="screen-reader-text" for="comment">' . esc_html__( 'Comment', 'baizonn-learning-center' ) . '</label><textarea id="comment" name="comment" placeholder="' . esc_attr__( 'Comment*', 'baizonn-learning-center' ) . '" cols="40" rows="8" aria-required="true" required></textarea></p>';
 		
 		return $defaults;    
 	}
@@ -315,29 +315,29 @@ if ( ! function_exists( 'education_center_widgets_init' ) ) :
 function education_center_widgets_init(){    
     $sidebars = array(
         'sidebar'   => array(
-            'name'        => __( 'Sidebar', 'education-center' ),
+            'name'        => __( 'Sidebar', 'baizonn-learning-center' ),
             'id'          => 'sidebar', 
-            'description' => __( 'Default Sidebar', 'education-center' ),
+            'description' => __( 'Default Sidebar', 'baizonn-learning-center' ),
         ),
         'footer-one'=> array(
-            'name'        => __( 'Footer One', 'education-center' ),
+            'name'        => __( 'Footer One', 'baizonn-learning-center' ),
             'id'          => 'footer-one', 
-            'description' => __( 'Add footer one widgets here.', 'education-center' ),
+            'description' => __( 'Add footer one widgets here.', 'baizonn-learning-center' ),
         ),
         'footer-two'=> array(
-            'name'        => __( 'Footer Two', 'education-center' ),
+            'name'        => __( 'Footer Two', 'baizonn-learning-center' ),
             'id'          => 'footer-two', 
-            'description' => __( 'Add footer two widgets here.', 'education-center' ),
+            'description' => __( 'Add footer two widgets here.', 'baizonn-learning-center' ),
         ),
         'footer-three'=> array(
-            'name'        => __( 'Footer Three', 'education-center' ),
+            'name'        => __( 'Footer Three', 'baizonn-learning-center' ),
             'id'          => 'footer-three', 
-            'description' => __( 'Add footer three widgets here.', 'education-center' ),
+            'description' => __( 'Add footer three widgets here.', 'baizonn-learning-center' ),
         ),
         'footer-four'=> array(
-            'name'        => __( 'Footer Four', 'education-center' ),
+            'name'        => __( 'Footer Four', 'baizonn-learning-center' ),
             'id'          => 'footer-four', 
-            'description' => __( 'Add footer four widgets here.', 'education-center' ),
+            'description' => __( 'Add footer four widgets here.', 'baizonn-learning-center' ),
         )
     );
     

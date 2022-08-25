@@ -39,8 +39,8 @@ add_action( 'customize_register', 'education_center_customize_register' );
 
 function education_center_customize_script(){
 
-    wp_enqueue_style( 'education-center-customize', get_template_directory_uri() . '/inc/css/customize.css', array(), EDUCATION_CENTER_THEME_VERSION );
-	wp_enqueue_script( 'education-center-customize', get_template_directory_uri() . '/inc/js/customize.js', array( 'jquery', 'customize-controls' ), EDUCATION_CENTER_THEME_VERSION, true );
+    wp_enqueue_style( 'baizonn-learning-center-customize', get_template_directory_uri() . '/inc/css/customize.css', array(), EDUCATION_CENTER_THEME_VERSION );
+	wp_enqueue_script( 'baizonn-learning-center-customize', get_template_directory_uri() . '/inc/js/customize.js', array( 'jquery', 'customize-controls' ), EDUCATION_CENTER_THEME_VERSION, true );
 
 }
 add_action( 'customize_controls_enqueue_scripts', 'education_center_customize_script' );
@@ -63,15 +63,11 @@ foreach( $education_center_sub_sections as $sub => $sec ){
     }
 }
 
-foreach( $education_center_sections as $section ){
-    require get_template_directory() . '/inc/customizer/section/' . $section . '.php';
-}
-
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function education_center_customize_preview_js() {
-	wp_enqueue_script( 'education-center-customizer', get_template_directory_uri() . '/inc/js/customizer.js', array( 'customize-preview' ), EDUCATION_CENTER_THEME_VERSION, true );
+	wp_enqueue_script( 'baizonn-learning-center-customizer', get_template_directory_uri() . '/inc/js/customizer.js', array( 'customize-preview' ), EDUCATION_CENTER_THEME_VERSION, true );
 }
 add_action( 'customize_preview_init', 'education_center_customize_preview_js' );
 
@@ -83,8 +79,8 @@ add_action( 'customize_preview_init', 'education_center_customize_preview_js' );
  */
 function education_center_control_inline_scripts() {
 
-	wp_enqueue_style('education-center-customize', get_template_directory_uri() . '/inc/css/customize.css', array(), EDUCATION_CENTER_THEME_VERSION );
-	wp_enqueue_script('education-center-customize', get_template_directory_uri() . '/inc/js/customize.js', array('jquery', 'customize-controls'), EDUCATION_CENTER_THEME_VERSION, true);
+	wp_enqueue_style('baizonn-learning-center-customize', get_template_directory_uri() . '/inc/css/customize.css', array(), EDUCATION_CENTER_THEME_VERSION );
+	wp_enqueue_script('baizonn-learning-center-customize', get_template_directory_uri() . '/inc/js/customize.js', array('jquery', 'customize-controls'), EDUCATION_CENTER_THEME_VERSION, true);
 }
 add_action( 'customize_controls_enqueue_scripts', 'education_center_control_inline_scripts', 100 );
 

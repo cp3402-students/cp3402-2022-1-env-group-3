@@ -11,7 +11,7 @@ function education_center_customize_register_post_page_settings( $wp_customize )
     $wp_customize->add_section(
         'post_page_settings',
         array(
-            'title'    => __( 'Post-Page Settings', 'education-center' ),
+            'title'    => __( 'Post-Page Settings', 'baizonn-learning-center' ),
             'priority' => 20,
             'panel'    => 'general_settings',
         )
@@ -32,8 +32,8 @@ function education_center_customize_register_post_page_settings( $wp_customize )
             'ed_post_author',
             array(
                 'section'     => 'post_page_settings',
-                'label'	      => __( 'Hide Author', 'education-center' ),
-                'description' => __( 'Enable to hide author box.', 'education-center' ),
+                'label'	      => __( 'Hide Author', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to hide author box.', 'baizonn-learning-center' ),
             )
         )
     );
@@ -53,8 +53,8 @@ function education_center_customize_register_post_page_settings( $wp_customize )
             'ed_post_date',
             array(
                 'section'     => 'post_page_settings',
-                'label'	      => __( 'Hide Posted Date', 'education-center' ),
-                'description' => __( 'Enable to hide posted date.', 'education-center' ),
+                'label'	      => __( 'Hide Posted Date', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to hide posted date.', 'baizonn-learning-center' ),
             )
         )
     );
@@ -74,8 +74,8 @@ function education_center_customize_register_post_page_settings( $wp_customize )
             'ed_post_views',
             array(
                 'section'     => 'post_page_settings',
-                'label'	      => __( 'Hide Post Views', 'education-center' ),
-                'description' => __( 'Enable to hide post views.', 'education-center' ),
+                'label'	      => __( 'Hide Post Views', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to hide post views.', 'baizonn-learning-center' ),
             )
         )
     );
@@ -84,7 +84,7 @@ function education_center_customize_register_post_page_settings( $wp_customize )
     $wp_customize->add_setting(
         'related_post_title',
         array(
-            'default'           => __( 'You might also like', 'education-center' ),
+            'default'           => __( 'You might also like', 'baizonn-learning-center' ),
             'sanitize_callback' => 'sanitize_text_field',
             'transport'         => 'postMessage' 
         )
@@ -95,7 +95,7 @@ function education_center_customize_register_post_page_settings( $wp_customize )
         array(
             'type'            => 'text',
             'section'         => 'post_page_settings',
-            'label'           => __( 'Related Posts Section Title', 'education-center' ),
+            'label'           => __( 'Related Posts Section Title', 'baizonn-learning-center' ),
         )
     );
     

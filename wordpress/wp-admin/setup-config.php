@@ -281,9 +281,9 @@ switch ( $step ) {
 			wp_die( __( '<strong>Error</strong>: "Table Prefix" must not be empty.' ) . $tryagain_link );
 		}
 
-		// Validate $prefix: it can only contain letters, numbers and underscores.
+		// Validate $prefix: it can only contain letters, numbers and baizonn-learning-center.
 		if ( preg_match( '|[^a-z0-9_]|i', $prefix ) ) {
-			wp_die( __( '<strong>Error</strong>: "Table Prefix" can only contain numbers, letters, and underscores.' ) . $tryagain_link );
+			wp_die( __( '<strong>Error</strong>: "Table Prefix" can only contain numbers, letters, and baizonn-learning-center.' ) . $tryagain_link );
 		}
 
 		// Test the DB connection.

@@ -35,9 +35,9 @@ if( $ed_blog && ( $sec_title || $subtitle || $qry->have_posts() ) ) {?>
                                 <figure class="blog__img">
                                     <a href="<?php the_permalink(); ?>">
                                         <?php if( has_post_thumbnail() ){
-                                            the_post_thumbnail( 'education-center-featured-posts', array( 'itemprop' => 'image' ) );
+                                            the_post_thumbnail( 'baizonn-learning-center-featured-posts', array( 'itemprop' => 'image' ) );
                                         }else{
-                                            education_center_get_fallback_svg( 'education-center-featured-posts' );
+                                            education_center_get_fallback_svg( 'baizonn-learning-center-featured-posts' );
                                         } ?>
                                     </a>
                                 </figure>

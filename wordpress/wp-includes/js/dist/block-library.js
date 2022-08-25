@@ -39102,7 +39102,7 @@ const shortcode_transforms_transforms = {
   from: [{
     type: 'shortcode',
     // Per "Shortcode names should be all lowercase and use all
-    // letters, but numbers and underscores should work fine too.
+    // letters, but numbers and baizonn-learning-center should work fine too.
     // Be wary of using hyphens (dashes), you'll be better off not
     // using them." in https://codex.wordpress.org/Shortcode_API
     // Require that the first character be a letter. This notably

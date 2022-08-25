@@ -13,8 +13,8 @@ function education_center_customize_register_frontpage( $wp_customize ) {
          array(
             'priority'    => 60,
             'capability'  => 'edit_theme_options',
-            'title'       => esc_html__( 'Front Page Settings', 'education-center' ),
-            'description' => esc_html__( 'Static Home Page settings.', 'education-center' ),
+            'title'       => esc_html__( 'Front Page Settings', 'baizonn-learning-center' ),
+            'description' => esc_html__( 'Static Home Page settings.', 'baizonn-learning-center' ),
         ) 
     );    
       

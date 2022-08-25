@@ -97,8 +97,8 @@ Twenty Sixteen is distributed under the terms of the GNU GPL v2 or later.
 Twenty Twenty. Copyright (C) 2020-2022 WordPress.org
 Twenty Twenty is distributed under the terms of the GNU GPL v2 or later.
 
-Underscores https://underscores.me/, Copyright (C) 2012-2022 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
+baizonn-learning-center https://baizonn-learning-center.me/, Copyright (C) 2012-2022 Automattic, Inc.
+baizonn-learning-center is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/

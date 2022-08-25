@@ -204,7 +204,7 @@ if ( $doaction ) {
 			$screen = get_current_screen()->id;
 
 			/** This action is documented in wp-admin/edit.php */
-			$location = apply_filters( "handle_bulk_actions-{$screen}", $location, $doaction, $post_ids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+			$location = apply_filters( "handle_bulk_actions-{$screen}", $location, $doaction, $post_ids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 	}
 
 	wp_redirect( $location );

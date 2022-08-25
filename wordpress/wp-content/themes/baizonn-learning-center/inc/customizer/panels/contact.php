@@ -12,8 +12,8 @@ function education_center_customize_register_contact( $wp_customize ) {
         'contact_page_settings',
          array(
             'priority'    => 60,
-            'title'       => __( 'Contact Page Settings', 'education-center' ),
-            'description' => __( 'Customize contact Page Sections', 'education-center' ),
+            'title'       => __( 'Contact Page Settings', 'baizonn-learning-center' ),
+            'description' => __( 'Customize contact Page Sections', 'baizonn-learning-center' ),
         ) 
     );
 

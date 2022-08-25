@@ -11,7 +11,7 @@ function education_center_add_layout_box(){
 
     add_meta_box( 
         'education_center_sidebar_layout',
-        __( 'Sidebar Layout', 'education-center' ),
+        __( 'Sidebar Layout', 'baizonn-learning-center' ),
         'education_center_sidebar_layout_callback', 
         array( 'page', 'post' ),
         'normal',
@@ -23,22 +23,22 @@ function education_center_add_layout_box(){
 $ecp_sidebar_layout = array(    
     'default-sidebar'=> array(
     	 'value'     => 'default-sidebar',
-    	 'label'     => __( 'Default Sidebar', 'education-center' ),
+    	 'label'     => __( 'Default Sidebar', 'baizonn-learning-center' ),
     	 'thumbnail' => get_template_directory_uri() . '/assets/img/sidebar/general-Default.jpg'
    	),
     'no-sidebar'     => array(
     	 'value'     => 'no-sidebar',
-    	 'label'     => __( 'Full Width', 'education-center' ),
+    	 'label'     => __( 'Full Width', 'baizonn-learning-center' ),
     	 'thumbnail' => get_template_directory_uri() . '/assets/img/sidebar/general-full.jpg'
     ),
     'left-sidebar' => array(
          'value'     => 'left-sidebar',
-    	 'label'     => __( 'Left Sidebar', 'education-center' ),
+    	 'label'     => __( 'Left Sidebar', 'baizonn-learning-center' ),
     	 'thumbnail' => get_template_directory_uri() . '/assets/img/sidebar/general-left.jpg'         
     ),
     'right-sidebar' => array(
          'value'     => 'right-sidebar',
-    	 'label'     => __( 'Right Sidebar', 'education-center' ),
+    	 'label'     => __( 'Right Sidebar', 'baizonn-learning-center' ),
     	 'thumbnail' => get_template_directory_uri() . '/assets/img/sidebar/general-right.jpg'         
      )    
 );
@@ -49,7 +49,7 @@ function education_center_sidebar_layout_callback(){
     ?>     
     <table class="form-table">
         <tr>
-            <td colspan="4"><em class="f13"><?php esc_html_e( 'Choose Sidebar Template', 'education-center' ); ?></em></td>
+            <td colspan="4"><em class="f13"><?php esc_html_e( 'Choose Sidebar Template', 'baizonn-learning-center' ); ?></em></td>
         </tr>    
         <tr>
             <td>

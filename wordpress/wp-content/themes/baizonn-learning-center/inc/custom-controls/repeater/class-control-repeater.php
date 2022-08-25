@@ -22,7 +22,7 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     	 * @access public
     	 * @var string
     	 */
-    	public $type = 'education-center-repeater';
+    	public $type = 'baizonn-learning-center-repeater';
     
     	/**
     	 * Data type
@@ -72,7 +72,7 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     		// Set up defaults for row labels.
     		$this->row_label = array(
     			'type' => 'text',
-    			'value' => esc_attr__( 'row', 'education-center' ),
+    			'value' => esc_attr__( 'row', 'baizonn-learning-center' ),
     			'field' => false,
     		);
     
@@ -80,7 +80,7 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     		$this->row_label( $args );
     
     		if ( empty( $this->button_label ) ) {
-    			$this->button_label = sprintf( esc_attr__( 'Add new %s', 'education-center' ), $this->row_label['value'] );
+    			$this->button_label = sprintf( esc_attr__( 'Add new %s', 'baizonn-learning-center' ), $this->row_label['value'] );
     		}
     
     		if ( empty( $args['fields'] ) || ! is_array( $args['fields'] ) ) {
@@ -211,8 +211,8 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     				}
     			}
     		}
-            wp_enqueue_script( 'education-center-repeater', get_template_directory_uri() . '/inc/custom-controls/repeater/repeater.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), false, true );
-    		wp_enqueue_style( 'education-center-repeater', get_template_directory_uri() . '/inc/custom-controls/repeater/repeater.css', null );
+            wp_enqueue_script( 'baizonn-learning-center-repeater', get_template_directory_uri() . '/inc/custom-controls/repeater/repeater.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), false, true );
+    		wp_enqueue_style( 'baizonn-learning-center-repeater', get_template_directory_uri() . '/inc/custom-controls/repeater/repeater.css', null );
     	}
     
     	/**
@@ -236,7 +236,7 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     		<ul class="repeater-fields"></ul>
     
     		<?php if ( isset( $this->choices['limit'] ) ) : ?>
-    			<p class="limit"><?php printf( esc_html__( 'Limit: %s rows', 'education-center' ), esc_html( $this->choices['limit'] ) ); ?></p>
+    			<p class="limit"><?php printf( esc_html__( 'Limit: %s rows', 'baizonn-learning-center' ), esc_html( $this->choices['limit'] ) ); ?></p>
     		<?php endif; ?>
     		<button class="button-secondary repeater-add"><?php echo esc_html( $this->button_label ); ?></button>
     
@@ -366,7 +366,7 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     						            <# if ( field.description ) { #>
     						                <span class="description customize-control-description">{{{ field.description }}}</span>
     						            <# } #>
-    						            <input class="color-picker-hex" type="text" maxlength="7" placeholder="<?php echo esc_attr__( 'Hex Value', 'education-center' ); ?>"  value="{{{ field.default }}}" data-field="{{{ field.id }}}" {{ defaultValue }} />
+    						            <input class="color-picker-hex" type="text" maxlength="7" placeholder="<?php echo esc_attr__( 'Hex Value', 'baizonn-learning-center' ); ?>"  value="{{{ field.default }}}" data-field="{{{ field.id }}}" {{ defaultValue }} />
     
     						        </label>
     
@@ -391,22 +391,22 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     									<# } #>
     								</label>
     
-    								<figure class="education-center-image-attachment" data-placeholder="<?php esc_attr_e( 'No Image Selected', 'education-center' ); ?>" >
+    								<figure class="baizonn-learning-center-image-attachment" data-placeholder="<?php esc_attr_e( 'No Image Selected', 'baizonn-learning-center' ); ?>" >
     									<# if ( field.default ) { #>
     										<# var defaultImageURL = ( field.default.url ) ? field.default.url : field.default; #>
     										<img src="{{{ defaultImageURL }}}">
     									<# } else { #>
-    										<?php esc_attr_e( 'No Image Selected', 'education-center' ); ?>
+    										<?php esc_attr_e( 'No Image Selected', 'baizonn-learning-center' ); ?>
     									<# } #>
     								</figure>
     
     								<div class="actions">
-    									<button type="button" class="button remove-button<# if ( ! field.default ) { #> hidden<# } #>"><?php esc_html_e( 'Remove', 'education-center' ); ?></button>
-    									<button type="button" class="button upload-button" data-label=" <?php esc_attr_e( 'Add Image', 'education-center' ); ?>" data-alt-label="<?php esc_attr_e( 'Change Image', 'education-center' ); ?>" >
+    									<button type="button" class="button remove-button<# if ( ! field.default ) { #> hidden<# } #>"><?php esc_html_e( 'Remove', 'baizonn-learning-center' ); ?></button>
+    									<button type="button" class="button upload-button" data-label=" <?php esc_attr_e( 'Add Image', 'baizonn-learning-center' ); ?>" data-alt-label="<?php esc_attr_e( 'Change Image', 'baizonn-learning-center' ); ?>" >
     										<# if ( field.default ) { #>
-    											<?php esc_attr_e( 'Change Image', 'education-center' ); ?>
+    											<?php esc_attr_e( 'Change Image', 'baizonn-learning-center' ); ?>
     										<# } else { #>
-    											<?php esc_attr_e( 'Add Image', 'education-center' ); ?>
+    											<?php esc_attr_e( 'Add Image', 'baizonn-learning-center' ); ?>
     										<# } #>
     									</button>
     									<# if ( field.default.id ) { #>
@@ -427,22 +427,22 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     									<# } #>
     								</label>
     
-    								<figure class="education-center-file-attachment" data-placeholder="<?php esc_attr_e( 'No File Selected', 'education-center' ); ?>" >
+    								<figure class="baizonn-learning-center-file-attachment" data-placeholder="<?php esc_attr_e( 'No File Selected', 'baizonn-learning-center' ); ?>" >
     									<# if ( field.default ) { #>
     										<# var defaultFilename = ( field.default.filename ) ? field.default.filename : field.default; #>
     										<span class="file"><span class="dashicons dashicons-media-default"></span> {{ defaultFilename }}</span>
     									<# } else { #>
-    										<?php esc_attr_e( 'No File Selected', 'education-center' ); ?>
+    										<?php esc_attr_e( 'No File Selected', 'baizonn-learning-center' ); ?>
     									<# } #>
     								</figure>
     
     								<div class="actions">
     									<button type="button" class="button remove-button<# if ( ! field.default ) { #> hidden<# } #>"></button>
-    									<button type="button" class="button upload-button" data-label="<?php esc_attr_e( 'Add File', 'education-center' ); ?>" data-alt-label="<?php esc_attr_e( 'Change File', 'education-center' ); ?>" >
+    									<button type="button" class="button upload-button" data-label="<?php esc_attr_e( 'Add File', 'baizonn-learning-center' ); ?>" data-alt-label="<?php esc_attr_e( 'Change File', 'baizonn-learning-center' ); ?>" >
     										<# if ( field.default ) { #>
-    											<?php esc_attr_e( 'Change File', 'education-center' ); ?>
+    											<?php esc_attr_e( 'Change File', 'baizonn-learning-center' ); ?>
     										<# } else { #>
-    											<?php esc_attr_e( 'Add File', 'education-center' ); ?>
+    											<?php esc_attr_e( 'Add File', 'baizonn-learning-center' ); ?>
     										<# } #>
     									</button>
     									<# if ( field.default.id ) { #>
@@ -466,7 +466,7 @@ if( ! class_exists( 'Education_Center_Control_Repeater' ) ) {
     
     						</div>
     					<# }); #>
-    					<button type="button" class="button-link repeater-row-remove"><?php esc_html_e( 'Remove', 'education-center' ); ?></button>
+    					<button type="button" class="button-link repeater-row-remove"><?php esc_html_e( 'Remove', 'baizonn-learning-center' ); ?></button>
     				</div>
     			</li>
     		</script>

@@ -12,7 +12,7 @@ function education_center_customize_register_featured_courses( $wp_customize ){
     $wp_customize->add_section(
         'featured_courses_section',
         array(
-            'title'    => __( 'Featured Courses Section', 'education-center' ),
+            'title'    => __( 'Featured Courses Section', 'baizonn-learning-center' ),
             'priority' => 35,
             'panel'    => 'frontpage_settings',
         )
@@ -33,8 +33,8 @@ function education_center_customize_register_featured_courses( $wp_customize ){
 			'ed_feat_course',
 			array(
 				'section'     => 'featured_courses_section',
-				'label'	      => __( 'Enable Featured Course Section', 'education-center' ),
-                'description' => __( 'Enable to show featured course section in your homepage. To view featured courses, please activate Tutor LMS plugin', 'education-center' ),
+				'label'	      => __( 'Enable Featured Course Section', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show featured course section in your homepage. To view featured courses, please activate Tutor LMS plugin', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -53,7 +53,7 @@ function education_center_customize_register_featured_courses( $wp_customize ){
         'courses_title',
         array(
             'section'         => 'featured_courses_section',
-            'label'           => __( 'Section Title', 'education-center' ),
+            'label'           => __( 'Section Title', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -77,7 +77,7 @@ function education_center_customize_register_featured_courses( $wp_customize ){
         'courses_subtitle',
         array(
             'section'         => 'featured_courses_section',
-            'label'           => __( 'Section Subtitle', 'education-center' ),
+            'label'           => __( 'Section Subtitle', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -102,7 +102,7 @@ function education_center_customize_register_featured_courses( $wp_customize ){
         array(
             'type'            => 'text',
             'section'         => 'featured_courses_section',
-            'label'           => __( 'Button Label', 'education-center' ),
+            'label'           => __( 'Button Label', 'baizonn-learning-center' ),
         )
     );
 

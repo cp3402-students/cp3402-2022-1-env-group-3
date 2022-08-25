@@ -12,7 +12,7 @@ function education_center_customize_register_home_blog_posts( $wp_customize ){
     $wp_customize->add_section(
         'blog_posts',
         array(
-            'title'    => __( 'Blog Posts Section', 'education-center' ),
+            'title'    => __( 'Blog Posts Section', 'baizonn-learning-center' ),
             'priority' => 50,
             'panel'    => 'frontpage_settings',
         )
@@ -33,8 +33,8 @@ function education_center_customize_register_home_blog_posts( $wp_customize ){
 			'ed_blog_post',
 			array(
 				'section'     => 'blog_posts',
-				'label'	      => __( 'Enable Blog Post Section', 'education-center' ),
-                'description' => __( 'Enable to show blog post section in your homepage', 'education-center' ),
+				'label'	      => __( 'Enable Blog Post Section', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show blog post section in your homepage', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -53,7 +53,7 @@ function education_center_customize_register_home_blog_posts( $wp_customize ){
         'blog_title',
         array(
             'section'         => 'blog_posts',
-            'label'           => __( 'Section Title', 'education-center' ),
+            'label'           => __( 'Section Title', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -77,7 +77,7 @@ function education_center_customize_register_home_blog_posts( $wp_customize ){
         'blog_subtitle',
         array(
             'section'         => 'blog_posts',
-            'label'           => __( 'Section Subtitle', 'education-center' ),
+            'label'           => __( 'Section Subtitle', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -102,7 +102,7 @@ function education_center_customize_register_home_blog_posts( $wp_customize ){
         array(
             'type'            => 'text',
             'section'         => 'blog_posts',
-            'label'           => __( 'Readmore Text', 'education-center' ),
+            'label'           => __( 'Readmore Text', 'baizonn-learning-center' ),
         )
     );
 

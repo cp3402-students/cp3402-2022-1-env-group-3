@@ -144,5 +144,5 @@ Source: https://wordpress.org/themes/twentyseventeen/
 Included as part of the following classes and functions:
 - twentytwenty_unique_id()
 
-Underscores
-https://underscores.me/, (C) 2012-2022 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+baizonn-learning-center
+https://baizonn-learning-center.me/, (C) 2012-2022 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)

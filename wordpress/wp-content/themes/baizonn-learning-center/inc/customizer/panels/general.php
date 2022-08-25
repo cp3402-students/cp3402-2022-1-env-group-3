@@ -14,8 +14,8 @@ function education_center_customize_register_general( $wp_customize ){
          array(
             'priority'    => 50,
             'capability'  => 'edit_theme_options',
-            'title'       => __( 'General Settings', 'education-center' ),
-            'description' => __( 'Customize Header, Social, Sharing, SEO, Post/Page, Newsletter, Performance and Miscellaneous settings.', 'education-center' ),
+            'title'       => __( 'General Settings', 'baizonn-learning-center' ),
+            'description' => __( 'Customize Header, Social, Sharing, SEO, Post/Page, Newsletter, Performance and Miscellaneous settings.', 'baizonn-learning-center' ),
         ) 
     );
     

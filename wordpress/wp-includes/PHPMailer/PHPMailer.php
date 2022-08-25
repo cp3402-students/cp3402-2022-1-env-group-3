@@ -1211,7 +1211,7 @@ class PHPMailer
                     ) {
                         $origCharset = mb_internal_encoding();
                         mb_internal_encoding($charset);
-                        //Undo any RFC2047-encoded spaces-as-underscores
+                        //Undo any RFC2047-encoded spaces-as-baizonn-learning-center
                         $address->personal = str_replace('_', '=20', $address->personal);
                         //Decode the name
                         $address->personal = mb_decode_mimeheader($address->personal);
@@ -1248,7 +1248,7 @@ class PHPMailer
                         if (defined('MB_CASE_UPPER') && preg_match('/^=\?.*\?=$/s', $name)) {
                             $origCharset = mb_internal_encoding();
                             mb_internal_encoding($charset);
-                            //Undo any RFC2047-encoded spaces-as-underscores
+                            //Undo any RFC2047-encoded spaces-as-baizonn-learning-center
                             $name = str_replace('_', '=20', $name);
                             //Decode the name
                             $name = mb_decode_mimeheader($name);

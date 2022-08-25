@@ -119,7 +119,7 @@ function education_center_primary_menu_fallback(){
     if( current_user_can( 'manage_options' ) ){
         echo '<div class="menu-primary-container">';
         echo '<ul id="primary-menu" class="nav-menu">';
-        echo '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Click here to add a menu', 'education-center' ) . '</a></li>';
+        echo '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Click here to add a menu', 'baizonn-learning-center' ) . '</a></li>';
         echo '</ul>';
         echo '</div>';
     }
@@ -155,7 +155,7 @@ function education_center_mobile_navigation(){ ?>
                                     <span class="toggle-bar"></span>
                                     <span class="toggle-bar"></span> 
                                 </button>
-                                <div class="header-left mobile-menu" aria-label="<?php esc_attr_e( 'Mobile', 'education-center' ); ?>">
+                                <div class="header-left mobile-menu" aria-label="<?php esc_attr_e( 'Mobile', 'baizonn-learning-center' ); ?>">
                                     <?php education_center_primary_navigation( false ); ?>
                                     <?php education_center_header_button(); ?>
                                 </div>
@@ -202,7 +202,7 @@ if ( ! function_exists( 'education_center_header_button' ) ) :
 * Header Login
 */
 function education_center_header_button(){ 
-    $btn_lbl        = get_theme_mod( 'header_btn_lbl', __( 'Subscribe', 'education-center' ) ); 
+    $btn_lbl        = get_theme_mod( 'header_btn_lbl', __( 'Subscribe', 'baizonn-learning-center' ) ); 
     $btn_link       = get_theme_mod( 'header_btn_link' ); 
     
     if( $btn_lbl && $btn_link ) echo '<a href="' . esc_url( $btn_link ) . '" class="btn btn-sm btn-primary">' . esc_html( $btn_lbl ) . '</a>';
@@ -275,7 +275,7 @@ function education_center_get_posts( $post_type = 'post', $slug = false ){
     
     // Initate an empty array
     $post_options = array();
-    $post_options[''] = __( ' -- Choose -- ', 'education-center' );
+    $post_options[''] = __( ' -- Choose -- ', 'baizonn-learning-center' );
     if ( ! empty( $posts_array ) ) {
         foreach ( $posts_array as $posts ) {
             if( $slug ){
@@ -371,7 +371,7 @@ function education_center_breadcrumb(){
     global $post;
     $post_page  = get_option( 'page_for_posts' ); //The ID of the page that displays posts.
     $show_front = get_option( 'show_on_front' ); //What to show on the front page    
-    $home       = get_theme_mod( 'home_text', __( 'Home', 'education-center' ) ); // text for the 'Home' link
+    $home       = get_theme_mod( 'home_text', __( 'Home', 'baizonn-learning-center' ) ); // text for the 'Home' link
     $delimiter  = '<span class="separator"><svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="https://www.w3.org/2000/svg"><path d="M1 1L4 4L1 7" stroke="#868686
     " stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
     $before     = '<span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">'; // tag before the current crumb
@@ -456,22 +456,22 @@ function education_center_breadcrumb(){
         }elseif( is_search() ){ 
             $depth       = 2;
             $request_uri = $_SERVER['REQUEST_URI'];
-            echo $before . '<a itemprop="item" href="'. esc_url( $request_uri ) . '"><span itemprop="name">' . sprintf( __( 'Search Results for "%s"', 'education-center' ), esc_html( get_search_query() ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $after;        
+            echo $before . '<a itemprop="item" href="'. esc_url( $request_uri ) . '"><span itemprop="name">' . sprintf( __( 'Search Results for "%s"', 'baizonn-learning-center' ), esc_html( get_search_query() ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $after;        
         }elseif( is_day() ){            
             $depth = 2;
-            echo '<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="' . esc_url( get_year_link( get_the_time( __( 'Y', 'education-center' ) ) ) ) . '" itemprop="item"><span itemprop="name">' . esc_html( get_the_time( __( 'Y', 'education-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $delimiter . '</span>';
+            echo '<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="' . esc_url( get_year_link( get_the_time( __( 'Y', 'baizonn-learning-center' ) ) ) ) . '" itemprop="item"><span itemprop="name">' . esc_html( get_the_time( __( 'Y', 'baizonn-learning-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $delimiter . '</span>';
             $depth++;
-            echo '<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="' . esc_url( get_month_link( get_the_time( __( 'Y', 'education-center' ) ), get_the_time( __( 'm', 'education-center' ) ) ) ) . '" itemprop="item"><span itemprop="name">' . esc_html( get_the_time( __( 'F', 'education-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $delimiter . '</span>';
+            echo '<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="' . esc_url( get_month_link( get_the_time( __( 'Y', 'baizonn-learning-center' ) ), get_the_time( __( 'm', 'baizonn-learning-center' ) ) ) ) . '" itemprop="item"><span itemprop="name">' . esc_html( get_the_time( __( 'F', 'baizonn-learning-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $delimiter . '</span>';
             $depth++;
-            echo $before . '<a itemprop="item" href="' . esc_url( get_day_link( get_the_time( __( 'Y', 'education-center' ) ), get_the_time( __( 'm', 'education-center' ) ), get_the_time( __( 'd', 'education-center' ) ) ) ) . '"><span itemprop="name">' . esc_html( get_the_time( __( 'd', 'education-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $after;        
+            echo $before . '<a itemprop="item" href="' . esc_url( get_day_link( get_the_time( __( 'Y', 'baizonn-learning-center' ) ), get_the_time( __( 'm', 'baizonn-learning-center' ) ), get_the_time( __( 'd', 'baizonn-learning-center' ) ) ) ) . '"><span itemprop="name">' . esc_html( get_the_time( __( 'd', 'baizonn-learning-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $after;        
         }elseif( is_month() ){            
             $depth = 2;
-            echo '<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="' . esc_url( get_year_link( get_the_time( __( 'Y', 'education-center' ) ) ) ) . '" itemprop="item"><span itemprop="name">' . esc_html( get_the_time( __( 'Y', 'education-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $delimiter . '</span>';
+            echo '<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="' . esc_url( get_year_link( get_the_time( __( 'Y', 'baizonn-learning-center' ) ) ) ) . '" itemprop="item"><span itemprop="name">' . esc_html( get_the_time( __( 'Y', 'baizonn-learning-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $delimiter . '</span>';
             $depth++;
-            echo $before . '<a itemprop="item" href="' . esc_url( get_month_link( get_the_time( __( 'Y', 'education-center' ) ), get_the_time( __( 'm', 'education-center' ) ) ) ) . '"><span itemprop="name">' . esc_html( get_the_time( __( 'F', 'education-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $after;        
+            echo $before . '<a itemprop="item" href="' . esc_url( get_month_link( get_the_time( __( 'Y', 'baizonn-learning-center' ) ), get_the_time( __( 'm', 'baizonn-learning-center' ) ) ) ) . '"><span itemprop="name">' . esc_html( get_the_time( __( 'F', 'baizonn-learning-center' ) ) ) . '</span></a><meta itemprop="position" content="'. absint( $depth ).'" />' . $after;        
         }elseif( is_year() ){ 
             $depth = 2;
-            echo $before .'<a itemprop="item" href="' . esc_url( get_year_link( get_the_time( __( 'Y', 'education-center' ) ) ) ) . '"><span itemprop="name">'. esc_html( get_the_time( __( 'Y', 'education-center' ) ) ) .'</span></a><meta itemprop="position" content="'. absint( $depth ).'" />'. $after;  
+            echo $before .'<a itemprop="item" href="' . esc_url( get_year_link( get_the_time( __( 'Y', 'baizonn-learning-center' ) ) ) ) . '"><span itemprop="name">'. esc_html( get_the_time( __( 'Y', 'baizonn-learning-center' ) ) ) .'</span></a><meta itemprop="position" content="'. absint( $depth ).'" />'. $after;  
         }elseif( is_single() && !is_attachment() ){   
             $depth = 2;         
             if( education_center_is_woocommerce_activated() && 'product' === get_post_type() ){ //For Woocommerce single product
@@ -548,7 +548,7 @@ function education_center_breadcrumb(){
             $post_type = get_post_type_object( get_post_type() );
             if( get_query_var('paged') ){
                 echo '<span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="' . esc_url( get_post_type_archive_link( $post_type->name ) ) . '" itemprop="item"><span itemprop="name">' . esc_html( $post_type->label ) . '</span></a><meta itemprop="position" content="' . absint( $depth ) . '" />' . $delimiter . '/</span>';
-                echo $before . sprintf( __('Page %s', 'education-center'), get_query_var('paged') ) . $after; //@todo need to check this
+                echo $before . sprintf( __('Page %s', 'baizonn-learning-center'), get_query_var('paged') ) . $after; //@todo need to check this
             }else{
                 echo $before . '<a itemprop="item" href="' . esc_url( get_post_type_archive_link( $post_type->name ) ) . '"><span itemprop="name">' . esc_html( $post_type->label ) . '</span></a><meta itemprop="position" content="' . absint( $depth ). '" />' . $after;
             }    
@@ -575,10 +575,10 @@ function education_center_breadcrumb(){
             echo $before . '<a href="' . get_permalink() . '" itemprop="item"><span itemprop="name">' . esc_html( get_the_title() ) . '</span></a><meta itemprop="position" content="' . absint( $depth ) . '" /></span>' . $after;
         }elseif( is_404() ){
             $depth = 2;
-            echo $before . '<a itemprop="item" href="' . esc_url( home_url() ) . '"><span itemprop="name">' . esc_html__( '404 Error - Page Not Found', 'education-center' ) . '</span></a><meta itemprop="position" content="' . absint( $depth ). '" />' . $after;
+            echo $before . '<a itemprop="item" href="' . esc_url( home_url() ) . '"><span itemprop="name">' . esc_html__( '404 Error - Page Not Found', 'baizonn-learning-center' ) . '</span></a><meta itemprop="position" content="' . absint( $depth ). '" />' . $after;
         }
         
-        if( get_query_var('paged') ) printf( __( ' (Page %s)', 'education-center' ), get_query_var('paged') );
+        if( get_query_var('paged') ) printf( __( ' (Page %s)', 'baizonn-learning-center' ), get_query_var('paged') );
         
         echo '</div><!-- .crumbs -->';
         
@@ -657,7 +657,7 @@ function education_center_entry_header(){
             </span>
             <?php if( ! $ed_post_date ) education_center_posted_on(); ?>
             <span class="article-comments">
-                <?php printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'education-center' ), number_format_i18n( get_comments_number() ) ); ?>
+                <?php printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'baizonn-learning-center' ), number_format_i18n( get_comments_number() ) ); ?>
             </span>
         </div>
     </header>
@@ -687,16 +687,16 @@ function education_center_theme_comment( $comment, $args, $depth ){
             <div class="comment-meta">
                 <div class="comment-author vcard">
                     <?php if ( $comment->comment_approved == '0' ) : ?>
-                        <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'education-center' ); ?></em>
+                        <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'baizonn-learning-center' ); ?></em>
                         <br />
                     <?php endif;
                     if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-                    <?php printf( __( '<b class="fn" itemprop="creator" itemscope itemtype="http://schema.org/Person">%s</b>', 'education-center' ), get_comment_author_link() ); ?>
+                    <?php printf( __( '<b class="fn" itemprop="creator" itemscope itemtype="http://schema.org/Person">%s</b>', 'baizonn-learning-center' ), get_comment_author_link() ); ?>
                 </div><!-- .comment-author vcard -->
                 <div class="comment-metadata">
-                    <?php esc_html_e( 'Posted on', 'education-center' );?>
+                    <?php esc_html_e( 'Posted on', 'baizonn-learning-center' );?>
                     <a href="<?php echo esc_url( htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ); ?>">
-                        <time itemprop="commentTime" datetime="<?php echo esc_attr( get_gmt_from_date( get_comment_date() . get_comment_time(), 'Y-m-d H:i:s' ) ); ?>"><?php printf( esc_html__( '%1$s at %2$s', 'education-center' ), get_comment_date(),  get_comment_time() ); ?></time>
+                        <time itemprop="commentTime" datetime="<?php echo esc_attr( get_gmt_from_date( get_comment_date() . get_comment_time(), 'Y-m-d H:i:s' ) ); ?>"><?php printf( esc_html__( '%1$s at %2$s', 'baizonn-learning-center' ), get_comment_date(),  get_comment_time() ); ?></time>
                     </a>
                 </div>
                 <div class="reply">
@@ -729,18 +729,18 @@ function education_center_get_posts_list( $status ){
     switch( $status ){
         case 'latest':        
         $args['posts_per_page'] = 3;
-        $args_title             = __( 'Latest Posts', 'education-center' );
+        $args_title             = __( 'Latest Posts', 'baizonn-learning-center' );
         $class                  = 'recent-posts';
-        $image_size             = 'education-center-search';
+        $image_size             = 'baizonn-learning-center-search';
         break;
         
         case 'related':
         $args['posts_per_page'] = 2;
         $args['post__not_in']   = array( $post->ID );
         $args['orderby']        = 'rand';
-        $args_title             = get_theme_mod( 'related_post_title', __( 'Related Posts', 'education-center' ) );
+        $args_title             = get_theme_mod( 'related_post_title', __( 'Related Posts', 'baizonn-learning-center' ) );
         $class                  = 'related-post';
-        $image_size             = 'education-center-search';
+        $image_size             = 'baizonn-learning-center-search';
         break;        
     }
     
@@ -785,8 +785,8 @@ if( ! function_exists( 'education_center_blog_info' ) ) :
  * Blog info
 */
 function education_center_blog_info(){ 
-    $archive_btn_label = get_theme_mod( 'archive_btn_label', __( 'View Details', 'education-center' ) );
-    $blog_btn_label    = get_theme_mod( 'readmore_lbl', __( 'Readmore', 'education-center' ) );
+    $archive_btn_label = get_theme_mod( 'archive_btn_label', __( 'View Details', 'baizonn-learning-center' ) );
+    $blog_btn_label    = get_theme_mod( 'readmore_lbl', __( 'Readmore', 'baizonn-learning-center' ) );
     $btn_label         = is_home() ? $blog_btn_label : $archive_btn_label; ?>
     
     <div class="blog__info">     
@@ -844,7 +844,7 @@ function education_center_google_fonts_url() {
     * supported by respective fonts, translate this to 'off'. Do not translate
     * into your own language.
     */
-    $montserrat_font = _x( 'on', 'Montserrat font: on or off', 'education-center' );
+    $montserrat_font = _x( 'on', 'Montserrat font: on or off', 'baizonn-learning-center' );
 
     if ( 'off' !== $montserrat_font ) {
         $font_families[] = 'Montserrat:300,300i,400,400i,500,500i,600,600i';

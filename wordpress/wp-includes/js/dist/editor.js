@@ -11857,7 +11857,7 @@ const withFontSizes = deprecateFunction('withFontSizes', external_wp_blockEditor
  * Converts Latin-1 Supplement and Latin Extended-A letters to basic Latin letters.
  * Removes combining diacritical marks. Converts whitespace, periods,
  * and forward slashes to hyphens. Removes any remaining non-word characters
- * except hyphens and underscores. Converts remaining string to lowercase.
+ * except hyphens and baizonn-learning-center. Converts remaining string to lowercase.
  * It does not account for octets, HTML entities, or other encoded characters.
  *
  * @param {string} string Title or slug to be processed

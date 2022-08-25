@@ -12,7 +12,7 @@ function education_center_customize_register_home_cta( $wp_customize ){
     $wp_customize->add_section(
         'cta_section',
         array(
-            'title'    => __( 'CTA Section', 'education-center' ),
+            'title'    => __( 'CTA Section', 'baizonn-learning-center' ),
             'priority' => 30,
             'panel'    => 'frontpage_settings',
         )
@@ -33,8 +33,8 @@ function education_center_customize_register_home_cta( $wp_customize ){
 			'ed_cta',
 			array(
 				'section'     => 'cta_section',
-				'label'	      => __( 'Enable CTA Section', 'education-center' ),
-                'description' => __( 'Enable to show CTA section in your homepage', 'education-center' ),
+				'label'	      => __( 'Enable CTA Section', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show CTA section in your homepage', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -53,7 +53,7 @@ function education_center_customize_register_home_cta( $wp_customize ){
         'cta_title',
         array(
             'section'         => 'cta_section',
-            'label'           => __( 'Section Title', 'education-center' ),
+            'label'           => __( 'Section Title', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -77,7 +77,7 @@ function education_center_customize_register_home_cta( $wp_customize ){
         'cta_subtitle',
         array(
             'section'         => 'cta_section',
-            'label'           => __( 'Section Subtitle', 'education-center' ),
+            'label'           => __( 'Section Subtitle', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -101,7 +101,7 @@ function education_center_customize_register_home_cta( $wp_customize ){
 			$wp_customize, 
 			'cta_background_image', 
 			array(
-				'label'      => __( 'Upload a background image', 'education-center' ),
+				'label'      => __( 'Upload a background image', 'baizonn-learning-center' ),
 				'section'    => 'cta_section',
 			)
     	)
@@ -122,7 +122,7 @@ function education_center_customize_register_home_cta( $wp_customize ){
         array(
             'type'            => 'text',
             'section'         => 'cta_section',
-            'label'           => __( 'Button Label', 'education-center' ),
+            'label'           => __( 'Button Label', 'baizonn-learning-center' ),
         )
     );
 
@@ -143,8 +143,8 @@ function education_center_customize_register_home_cta( $wp_customize ){
     $wp_customize->add_control(
         'cta_contact_link',
         array(
-            'label'           => __( 'Button Link', 'education-center' ),
-            'description'     => __( 'The link opens in a new tab', 'education-center' ),
+            'label'           => __( 'Button Link', 'baizonn-learning-center' ),
+            'description'     => __( 'The link opens in a new tab', 'baizonn-learning-center' ),
             'section'         => 'cta_section',
             'type'            => 'text',
         )

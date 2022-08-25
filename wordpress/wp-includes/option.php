@@ -1132,7 +1132,7 @@ function get_user_setting( $name, $default = false ) {
 /**
  * Adds or updates user interface setting.
  *
- * Both $name and $value can contain only ASCII letters, numbers, hyphens, and underscores.
+ * Both $name and $value can contain only ASCII letters, numbers, hyphens, and baizonn-learning-center.
  *
  * This function has to be used before any output has started as it calls setcookie().
  *

@@ -15,10 +15,10 @@ function education_center_customize_register_appearance( $wp_customize ) {
     $wp_customize->add_panel( 
         'appearance_settings', 
         array(
-            'title'       => __( 'Appearance Settings', 'education-center' ),
+            'title'       => __( 'Appearance Settings', 'baizonn-learning-center' ),
             'priority'    => 25,
             'capability'  => 'edit_theme_options',
-            'description' => __( 'Change color and body background.', 'education-center' ),
+            'description' => __( 'Change color and body background.', 'baizonn-learning-center' ),
         ) 
     );
 

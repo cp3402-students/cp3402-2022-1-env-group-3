@@ -11,7 +11,7 @@ function education_center_customize_register_layout_general( $wp_customize ) {
     $wp_customize->add_section(
         'general_layout_settings',
         array(
-            'title'    => __( 'Layout Settings', 'education-center' ),
+            'title'    => __( 'Layout Settings', 'baizonn-learning-center' ),
             'priority' => 55,
         )
     );
@@ -31,8 +31,8 @@ function education_center_customize_register_layout_general( $wp_customize ) {
 			'page_sidebar_layout',
 			array(
 				'section'	  => 'general_layout_settings',
-				'label'		  => __( 'Page Sidebar Layout', 'education-center' ),
-				'description' => __( 'This is the general sidebar layout for pages. You can override the sidebar layout for individual page in respective page.', 'education-center' ),
+				'label'		  => __( 'Page Sidebar Layout', 'baizonn-learning-center' ),
+				'description' => __( 'This is the general sidebar layout for pages. You can override the sidebar layout for individual page in respective page.', 'baizonn-learning-center' ),
 				'choices'	  => array(
 					'no-sidebar'    => get_template_directory_uri() . '/assets/img/sidebar/general-full.jpg',
 					'left-sidebar'  => get_template_directory_uri() . '/assets/img/sidebar/general-left.jpg',
@@ -57,8 +57,8 @@ function education_center_customize_register_layout_general( $wp_customize ) {
 			'post_sidebar_layout',
 			array(
 				'section'	  => 'general_layout_settings',
-				'label'		  => __( 'Post Sidebar Layout', 'education-center' ),
-				'description' => __( 'This is the general sidebar layout for posts & custom post. You can override the sidebar layout for individual post in respective post.', 'education-center' ),
+				'label'		  => __( 'Post Sidebar Layout', 'baizonn-learning-center' ),
+				'description' => __( 'This is the general sidebar layout for posts & custom post. You can override the sidebar layout for individual post in respective post.', 'baizonn-learning-center' ),
 				'choices'	  => array(
 					'no-sidebar'    => get_template_directory_uri() . '/assets/img/sidebar/general-full.jpg',
 					'left-sidebar'  => get_template_directory_uri() . '/assets/img/sidebar/general-left.jpg',
@@ -83,8 +83,8 @@ function education_center_customize_register_layout_general( $wp_customize ) {
 			'layout_style',
 			array(
 				'section'	  => 'general_layout_settings',
-				'label'		  => __( 'Default Sidebar Layout', 'education-center' ),
-				'description' => __( 'This is the general sidebar layout for whole site.', 'education-center' ),
+				'label'		  => __( 'Default Sidebar Layout', 'baizonn-learning-center' ),
+				'description' => __( 'This is the general sidebar layout for whole site.', 'baizonn-learning-center' ),
 				'choices'	  => array(
 					'no-sidebar'    => get_template_directory_uri() . '/assets/img/sidebar/general-full.jpg',
                     'left-sidebar'  => get_template_directory_uri() . '/assets/img/sidebar/general-left.jpg',

@@ -691,7 +691,7 @@ if ( ! function_exists( 'education_center_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time.
  */
 function education_center_posted_on() {
-    $on = __( ' ', 'education-center' );
+    $on = __( ' ', 'baizonn-learning-center' );
     
     $time_string = '<time class="entry-date published updated" datetime="%1$s" itemprop="datePublished">%2$s</time>';   
 
@@ -740,7 +740,7 @@ if ( ! function_exists( 'education_center_posted_by' ) ) :
 function education_center_posted_by() {
     $byline = sprintf(
         /* translators: %s: post author. */
-        esc_html_x( 'by %s', 'post author', 'education-center' ),
+        esc_html_x( 'by %s', 'post author', 'baizonn-learning-center' ),
         '<span itemprop="name"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" itemprop="url">' . esc_html( get_the_author() ) . '</a></span>' 
     );
     echo '<span class="byline" itemprop="author" itemscope itemtype="https://schema.org/Person">' . $byline . '</span>';
@@ -777,7 +777,7 @@ function education_center_get_svg_icons(){
     
     // Initate an empty array
     $svg_options = array();
-    $svg_options[''] = __( ' -- Choose -- ', 'education-center' );
+    $svg_options[''] = __( ' -- Choose -- ', 'baizonn-learning-center' );
     
         foreach ( $social_media as $svg ) {			
             $svg_options[ $svg ] = esc_html( $svg );				

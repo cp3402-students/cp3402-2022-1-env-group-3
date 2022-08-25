@@ -760,7 +760,7 @@ function set_screen_options() {
 				 * @param string $option        The option name.
 				 * @param int    $value         The option value.
 				 */
-				$screen_option = apply_filters( 'set-screen-option', $screen_option, $option, $value ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+				$screen_option = apply_filters( 'set-screen-option', $screen_option, $option, $value ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 			}
 
 			/**

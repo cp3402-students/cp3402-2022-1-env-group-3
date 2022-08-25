@@ -49,6 +49,21 @@ define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', 'example username') );
 /** Database password */
 define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'example password') );
 
+define( 'TC_PRE', 'Theme Review:[[br]]
+- Themes should be reviewed using "define(\'WP_DEBUG\', true);" in wp-config.php[[br]]
+- Themes should be reviewed using the test data from the Theme Checklists (TC)
+-----
+' );
+
+define('WP_DEBUG', true);
+
+define( 'TC_POST', 'Feel free to make use of the contact details below if you have any questions,
+comments, or feedback:[[br]]
+[[br]]
+* Leave a comment on this ticket[[br]]
+* Send an email to the Theme Review email list[[br]]
+* Use the #wordpress-themes IRC channel on Freenode.' );
+
 /**
  * Docker image fallback values above are sourced from the official WordPress installation wizard:
  * https://github.com/WordPress/WordPress/blob/f9cc35ebad82753e9c86de322ea5c76a9001c7e2/wp-admin/setup-config.php#L216-L230
@@ -91,7 +106,7 @@ define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'c0c4fe2
  * WordPress database table prefix.
  *
  * You can have multiple installations in one database if you give each
- * a unique prefix. Only numbers, letters, and underscores please!
+ * a unique prefix. Only numbers, letters, and baizonn-learning-center please!
  */
 $table_prefix = getenv_docker('WORDPRESS_TABLE_PREFIX', 'wp_');
 

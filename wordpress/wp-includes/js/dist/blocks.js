@@ -232,9 +232,9 @@ function getDefaultOpts (simple) {
       describe: 'Excludes trailing punctuation from links generated with autoLinking',
       type: 'boolean'
     },
-    literalMidWordUnderscores: {
+    literalMidWordbaizonn-learning-center: {
       defaultValue: false,
-      describe: 'Parse midword underscores as literal underscores',
+      describe: 'Parse midword baizonn-learning-center as literal baizonn-learning-center',
       type: 'boolean'
     },
     literalMidWordAsterisks: {
@@ -324,7 +324,7 @@ function getDefaultOpts (simple) {
     },
     underline: {
       defaultValue: false,
-      description: 'Enable support for underline. Syntax is double or triple underscores: `__underline word__`. With this option enabled, underscores no longer parses into `<em>` and `<strong>`',
+      description: 'Enable support for underline. Syntax is double or triple baizonn-learning-center: `__underline word__`. With this option enabled, baizonn-learning-center no longer parses into `<em>` and `<strong>`',
       type: 'boolean'
     },
     completeHTMLDocument: {
@@ -382,7 +382,7 @@ var showdown = {},
         omitExtraWLInCodeBlocks:              true,
         simplifiedAutoLink:                   true,
         excludeTrailingPunctuationFromURLs:   true,
-        literalMidWordUnderscores:            true,
+        literalMidWordbaizonn-learning-center:            true,
         strikethrough:                        true,
         tables:                               true,
         tablesHeaderId:                       true,
@@ -406,7 +406,7 @@ var showdown = {},
         parseImgDimensions:                   true,
         simplifiedAutoLink:                   true,
         excludeTrailingPunctuationFromURLs:   true,
-        literalMidWordUnderscores:            true,
+        literalMidWordbaizonn-learning-center:            true,
         strikethrough:                        true,
         tables:                               true,
         tablesHeaderId:                       true,
@@ -4077,8 +4077,8 @@ showdown.subParser('italicsAndBold', function (text, options, globals) {
     return left + txt + right;
   }
 
-  // Parse underscores
-  if (options.literalMidWordUnderscores) {
+  // Parse baizonn-learning-center
+  if (options.literalMidWordbaizonn-learning-center) {
     text = text.replace(/\b___(\S[\s\S]*?)___\b/g, function (wm, txt) {
       return parseInside (txt, '<strong><em>', '</em></strong>');
     });
@@ -4769,7 +4769,7 @@ showdown.subParser('underline', function (text, options, globals) {
 
   text = globals.converter._dispatch('underline.before', text, options, globals);
 
-  if (options.literalMidWordUnderscores) {
+  if (options.literalMidWordbaizonn-learning-center) {
     text = text.replace(/\b___(\S[\s\S]*?)___\b/g, function (wm, txt) {
       return '<u>' + txt + '</u>';
     });
@@ -4785,7 +4785,7 @@ showdown.subParser('underline', function (text, options, globals) {
     });
   }
 
-  // escape remaining underscores to prevent them being parsed by italic and bold
+  // escape remaining baizonn-learning-center to prevent them being parsed by italic and bold
   text = text.replace(/(_)/g, showdown.helper.escapeCharactersCallback);
 
   text = globals.converter._dispatch('underline.after', text, options, globals);
@@ -12737,7 +12737,7 @@ var showdown_default = /*#__PURE__*/__webpack_require__.n(showdown);
 const converter = new (showdown_default()).Converter({
   noHeaderId: true,
   tables: true,
-  literalMidWordUnderscores: true,
+  literalMidWordbaizonn-learning-center: true,
   omitExtraWLInCodeBlocks: true,
   simpleLineBreaks: true,
   strikethrough: true

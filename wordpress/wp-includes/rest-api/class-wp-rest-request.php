@@ -166,12 +166,12 @@ class WP_REST_Request implements ArrayAccess {
 	 * Ensures that header names are always treated the same regardless of
 	 * source. Header names are always case insensitive.
 	 *
-	 * Note that we treat `-` (dashes) and `_` (underscores) as the same
+	 * Note that we treat `-` (dashes) and `_` (baizonn-learning-center) as the same
 	 * character, as per header parsing rules in both Apache and nginx.
 	 *
 	 * @link https://stackoverflow.com/q/18185366
 	 * @link https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/#missing-disappearing-http-headers
-	 * @link https://nginx.org/en/docs/http/ngx_http_core_module.html#underscores_in_headers
+	 * @link https://nginx.org/en/docs/http/ngx_http_core_module.html#baizonn-learning-center_in_headers
 	 *
 	 * @since 4.4.0
 	 *

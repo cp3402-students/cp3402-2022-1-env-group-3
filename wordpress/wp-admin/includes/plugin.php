@@ -1290,7 +1290,7 @@ function uninstall_plugin( $plugin ) {
  * @param string    $menu_title The text to be used for the menu.
  * @param string    $capability The capability required for this menu to be displayed to the user.
  * @param string    $menu_slug  The slug name to refer to this menu by. Should be unique for this menu page and only
- *                              include lowercase alphanumeric, dashes, and underscores characters to be compatible
+ *                              include lowercase alphanumeric, dashes, and baizonn-learning-center characters to be compatible
  *                              with sanitize_key().
  * @param callable  $callback   Optional. The function to be called to output the content for this page.
  * @param string    $icon_url   Optional. The URL to the icon to be used for this menu.
@@ -1391,7 +1391,7 @@ function add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $call
  * @param string    $menu_title  The text to be used for the menu.
  * @param string    $capability  The capability required for this menu to be displayed to the user.
  * @param string    $menu_slug   The slug name to refer to this menu by. Should be unique for this menu
- *                               and only include lowercase alphanumeric, dashes, and underscores characters
+ *                               and only include lowercase alphanumeric, dashes, and baizonn-learning-center characters
  *                               to be compatible with sanitize_key().
  * @param callable  $callback    Optional. The function to be called to output the content for this page.
  * @param int|float $position    Optional. The position in the menu order this item should appear.

@@ -65,7 +65,7 @@ var educationcenterproRepeaterRow = function( rowIndex, container, label ){
 	this.updateLabel();
 };
 
-wp.customize.controlConstructor['education-center-repeater'] = wp.customize.Control.extend({
+wp.customize.controlConstructor['baizonn-learning-center-repeater'] = wp.customize.Control.extend({
 	ready: function(){
 		'use strict';
 
@@ -435,7 +435,7 @@ wp.customize.controlConstructor['education-center-repeater'] = wp.customize.Cont
 
 		var $targetDiv = this.$thisButton.closest( '.repeater-field-image,.repeater-field-cropped_image' );
 
-		$targetDiv.find( '.education-center-image-attachment' ).html( '<img src="' + attachment.url + '">' ).hide().slideDown( 'slow' );
+		$targetDiv.find( '.baizonn-learning-center-image-attachment' ).html( '<img src="' + attachment.url + '">' ).hide().slideDown( 'slow' );
 
 		$targetDiv.find( '.hidden-field' ).val( attachment.id );
 		this.$thisButton.text( this.$thisButton.data( 'alt-label' ) );
@@ -457,7 +457,7 @@ wp.customize.controlConstructor['education-center-repeater'] = wp.customize.Cont
 
 		var $targetDiv = this.$thisButton.closest( '.repeater-field-upload' );
 
-		$targetDiv.find( '.education-center-file-attachment' ).html( '<span class="file"><span class="dashicons dashicons-media-default"></span> ' + attachment.filename + '</span>' ).hide().slideDown( 'slow' );
+		$targetDiv.find( '.baizonn-learning-center-file-attachment' ).html( '<span class="file"><span class="dashicons dashicons-media-default"></span> ' + attachment.filename + '</span>' ).hide().slideDown( 'slow' );
 
 		$targetDiv.find( '.hidden-field' ).val( attachment.id );
 		this.$thisButton.text( this.$thisButton.data( 'alt-label' ) );
@@ -506,7 +506,7 @@ wp.customize.controlConstructor['education-center-repeater'] = wp.customize.Cont
 		$targetDiv = this.$thisButton.closest( '.repeater-field-image,.repeater-field-cropped_image,.repeater-field-upload' );
 		$uploadButton = $targetDiv.find( '.upload-button' );
 
-		$targetDiv.find( '.education-center-image-attachment' ).slideUp( 'fast', function() {
+		$targetDiv.find( '.baizonn-learning-center-image-attachment' ).slideUp( 'fast', function() {
 			jQuery( this ).show().html( jQuery( this ).data( 'placeholder' ) );
 		});
 		$targetDiv.find( '.hidden-field' ).val( '' );
@@ -529,7 +529,7 @@ wp.customize.controlConstructor['education-center-repeater'] = wp.customize.Cont
 		$targetDiv = this.$thisButton.closest( '.repeater-field-upload' );
 		$uploadButton = $targetDiv.find( '.upload-button' );
 
-		$targetDiv.find( '.education-center-file-attachment' ).slideUp( 'fast', function() {
+		$targetDiv.find( '.baizonn-learning-center-file-attachment' ).slideUp( 'fast', function() {
 			jQuery( this ).show().html( jQuery( this ).data( 'placeholder' ) );
 		});
 		$targetDiv.find( '.hidden-field' ).val( '' );

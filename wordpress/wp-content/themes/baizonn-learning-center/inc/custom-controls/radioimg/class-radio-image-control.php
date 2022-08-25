@@ -16,7 +16,7 @@ if( ! class_exists( 'Education_Center_Radio_Image_Control' ) ){
     */
 	class Education_Center_Radio_Image_Control extends WP_Customize_Control {
 
-		public $type = 'education-center-radio-image';
+		public $type = 'baizonn-learning-center-radio-image';
         
         public $tooltip = '';
         
@@ -42,8 +42,8 @@ if( ! class_exists( 'Education_Center_Radio_Image_Control' ) ){
 		}
         
         public function enqueue() {            
-            wp_enqueue_style( 'education-center-radio-image', get_template_directory_uri() . '/inc/custom-controls/radioimg/radio-image.css', null );
-            wp_enqueue_script( 'education-center-radio-image', get_template_directory_uri() . '/inc/custom-controls/radioimg/radio-image.js', array( 'jquery' ), false, true ); //for radio-image                
+            wp_enqueue_style( 'baizonn-learning-center-radio-image', get_template_directory_uri() . '/inc/custom-controls/radioimg/radio-image.css', null );
+            wp_enqueue_script( 'baizonn-learning-center-radio-image', get_template_directory_uri() . '/inc/custom-controls/radioimg/radio-image.js', array( 'jquery' ), false, true ); //for radio-image                
         }
 
 		protected function content_template() {

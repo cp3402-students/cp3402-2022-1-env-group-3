@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Education Center 1.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/education-center\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/baizonn-learning-center\n"
 "POT-Creation-Date: 2022-02-04 13:48:25+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -1267,7 +1267,7 @@ msgid "Education Center"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://glthemes.com/wordpress-theme/education-center"
+msgid "https://glthemes.com/wordpress-theme/baizonn-learning-center"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -1288,10 +1288,10 @@ msgid ""
 "for a minimal, visually aesthetic yet fully functional free education "
 "WordPress theme with tons of room for extensibility and customization, "
 "Education Center is the theme to go for. Don't take our words for it; try "
-"out the theme here: https://demo.glthemes.com/education-center/. If you "
+"out the theme here: https://demo.glthemes.com/baizonn-learning-center/. If you "
 "stumble upon any issues or have queries about the theme, refer to the "
 "official theme documentation: "
-"https://glthemes.com/documentation/education-center or leave an inquiry at "
+"https://glthemes.com/documentation/baizonn-learning-center or leave an inquiry at "
 "https://glthemes.com/support/."
 msgstr ""
 

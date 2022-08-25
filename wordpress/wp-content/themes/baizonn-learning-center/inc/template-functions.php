@@ -36,7 +36,7 @@ if( ! function_exists( 'education_center_page_start' ) ) :
 */
 function education_center_page_start(){ ?>
     <div id="page" class="site">
-        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'education-center' ); ?></a>
+        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'baizonn-learning-center' ); ?></a>
     <?php
 }
 endif;
@@ -132,7 +132,7 @@ function education_center_top_wrapper(){
                     the_title('<span class="page-title">', '</span>');
                 }elseif( is_404() ){ ?>
                     <header class="entry-header">
-                        <span class="page-title"><?php esc_html_e( 'Error page', 'education-center' ); ?></span>
+                        <span class="page-title"><?php esc_html_e( 'Error page', 'baizonn-learning-center' ); ?></span>
                     </header>
                 <?php }elseif( is_home() && ! is_front_page() ){ ?>
                     <header class="entry-header">
@@ -153,12 +153,12 @@ if( ! function_exists( 'education_center_banner' ) ) :
  */
 function education_center_banner(){
 $banner               = get_theme_mod( 'ed_banner_section', 'static_banner' );
-$banner_subtitle      = get_theme_mod( 'banner_subtitle', __( 'Welcome to SCU', 'education-center' ) );
-$banner_title         = get_theme_mod( 'banner_title', __( 'SCU is the One Stop for all Students.', 'education-center' ) );
-$banner_desc          = get_theme_mod( 'banner_content',  __( 'Take your learning organisation to the next level.', 'education-center' ) );
-$btn_one              = get_theme_mod( 'banner_btn_label', __( 'See Courses', 'education-center' ) );
+$banner_subtitle      = get_theme_mod( 'banner_subtitle', __( 'Welcome to SCU', 'baizonn-learning-center' ) );
+$banner_title         = get_theme_mod( 'banner_title', __( 'SCU is the One Stop for all Students.', 'baizonn-learning-center' ) );
+$banner_desc          = get_theme_mod( 'banner_content',  __( 'Take your learning organisation to the next level.', 'baizonn-learning-center' ) );
+$btn_one              = get_theme_mod( 'banner_btn_label', __( 'See Courses', 'baizonn-learning-center' ) );
 $btn_one_url          = get_theme_mod( 'banner_link', '#' );
-$btn_two              = get_theme_mod( 'banner_btn_two_label', __( 'Start Trial', 'education-center' ) );
+$btn_two              = get_theme_mod( 'banner_btn_two_label', __( 'Start Trial', 'baizonn-learning-center' ) );
 $btn_two_url          = get_theme_mod( 'banner_link_two', '#' );
 
 if( is_front_page() && $banner == 'static_banner' && has_custom_header() ){ ?>
@@ -235,7 +235,7 @@ if( ! function_exists( 'education_center_navigation' ) ) :
                                             <header class="entry-header">
                                                 <h3 class="entry-title"><?php echo esc_html( get_the_title( $prev_post->ID ) ); ?></h3>  
                                             </header>
-                                            <span class="meta-nav"><?php echo esc_html__( 'Prev', 'education-center' ); ?></span>
+                                            <span class="meta-nav"><?php echo esc_html__( 'Prev', 'baizonn-learning-center' ); ?></span>
                                         </div>
                                     </article>
                                 </a>
@@ -257,7 +257,7 @@ if( ! function_exists( 'education_center_navigation' ) ) :
                                             <header class="entry-header">
                                                 <h3 class="entry-title"><?php echo esc_html( get_the_title( $next_post->ID ) ); ?></h3>
                                             </header>
-                                            <span class="meta-nav"><?php echo esc_html__( 'Next', 'education-center' ); ?></span>
+                                            <span class="meta-nav"><?php echo esc_html__( 'Next', 'baizonn-learning-center' ); ?></span>
                                         </div>
                                     </article>
                                 </a>

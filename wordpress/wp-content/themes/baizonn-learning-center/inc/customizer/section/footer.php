@@ -10,7 +10,7 @@ function education_center_customize_register_footer( $wp_customize ) {
     $wp_customize->add_section(
         'footer_settings',
         array(
-            'title'      => __( 'Footer Settings', 'education-center' ),
+            'title'      => __( 'Footer Settings', 'baizonn-learning-center' ),
             'priority'   => 199,
             'capability' => 'edit_theme_options',
         )
@@ -29,7 +29,7 @@ function education_center_customize_register_footer( $wp_customize ) {
     $wp_customize->add_control(
         'footer_copyright',
         array(
-            'label'       => __( 'Footer Copyright Text', 'education-center' ),
+            'label'       => __( 'Footer Copyright Text', 'baizonn-learning-center' ),
             'section'     => 'footer_settings',
             'type'        => 'textarea',
         )

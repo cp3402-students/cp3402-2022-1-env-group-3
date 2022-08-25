@@ -93,7 +93,7 @@ if ( $doaction ) {
 		$screen = get_current_screen()->id;
 
 		/** This action is documented in wp-admin/edit.php */
-		$redirect_to = apply_filters( "handle_bulk_actions-{$screen}", $redirect_to, $doaction, $comment_ids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+		$redirect_to = apply_filters( "handle_bulk_actions-{$screen}", $redirect_to, $doaction, $comment_ids ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 	}
 
 	wp_defer_comment_counting( false );

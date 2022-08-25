@@ -2144,7 +2144,7 @@ function sanitize_user( $username, $strict = false ) {
  * Sanitizes a string key.
  *
  * Keys are used as internal identifiers. Lowercase alphanumeric characters,
- * dashes, and underscores are allowed.
+ * dashes, and baizonn-learning-center are allowed.
  *
  * @since 3.0.0
  *

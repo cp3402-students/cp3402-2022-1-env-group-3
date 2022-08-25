@@ -12,7 +12,7 @@ function education_center_customize_register_video_block( $wp_customize ){
     $wp_customize->add_section(
         'video_block_section',
         array(
-            'title'    => __( 'Video Block Section', 'education-center' ),
+            'title'    => __( 'Video Block Section', 'baizonn-learning-center' ),
             'priority' => 45,
             'panel'    => 'frontpage_settings',
         )
@@ -33,8 +33,8 @@ function education_center_customize_register_video_block( $wp_customize ){
 			'ed_video_sec',
 			array(
 				'section'     => 'video_block_section',
-				'label'	      => __( 'Enable Video Block Section', 'education-center' ),
-                'description' => __( 'Enable to show video block section in your homepage.', 'education-center' ),
+				'label'	      => __( 'Enable Video Block Section', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show video block section in your homepage.', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -53,7 +53,7 @@ function education_center_customize_register_video_block( $wp_customize ){
         'video_block_title',
         array(
             'section'         => 'video_block_section',
-            'label'           => __( 'Section Title', 'education-center' ),
+            'label'           => __( 'Section Title', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -76,7 +76,7 @@ function education_center_customize_register_video_block( $wp_customize ){
         'video_block_content',
         array(
             'section'         => 'video_block_section',
-            'label'           => __( 'Section Content', 'education-center' ),
+            'label'           => __( 'Section Content', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -93,8 +93,8 @@ function education_center_customize_register_video_block( $wp_customize ){
     $wp_customize->add_control(
         'video_link',
         array(
-            'label'           => __( 'Video Link', 'education-center' ),
-            'description'     => __( 'Enter a Video URL', 'education-center' ),
+            'label'           => __( 'Video Link', 'baizonn-learning-center' ),
+            'description'     => __( 'Enter a Video URL', 'baizonn-learning-center' ),
             'section'         => 'video_block_section',
             'type'            => 'text',
         )
@@ -113,7 +113,7 @@ function education_center_customize_register_video_block( $wp_customize ){
 			$wp_customize, 
 			'video_block_img', 
 			array(
-				'label'      => __( 'Upload a background image', 'education-center' ),
+				'label'      => __( 'Upload a background image', 'baizonn-learning-center' ),
 				'section'    => 'video_block_section',
 			)
     	)

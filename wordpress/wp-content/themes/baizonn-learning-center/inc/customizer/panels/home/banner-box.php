@@ -11,7 +11,7 @@ function education_center_customize_register_frontpage_banner_box( $wp_customize
     $wp_customize->add_section(
         'banner_box',
         array(
-            'title'    => __( 'Banner Box Section', 'education-center' ),
+            'title'    => __( 'Banner Box Section', 'baizonn-learning-center' ),
             'priority' => 12,
             'panel'    => 'frontpage_settings',
         )
@@ -32,8 +32,8 @@ function education_center_customize_register_frontpage_banner_box( $wp_customize
 			'ed_banner_box',
 			array(
 				'section'     => 'banner_box',
-				'label'	      => __( 'Enable Banner Box Section', 'education-center' ),
-                'description' => __( 'Enable to show banner box section in your homepage', 'education-center' ),
+				'label'	      => __( 'Enable Banner Box Section', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show banner box section in your homepage', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -56,25 +56,25 @@ function education_center_customize_register_frontpage_banner_box( $wp_customize
             'banner_icon_text',
             array(
                 'section' => 'banner_box',
-                'label'   => esc_html__( 'Icon Text', 'education-center' ),
+                'label'   => esc_html__( 'Icon Text', 'baizonn-learning-center' ),
                 'fields'  => array(
                     'icon' => array(
                         'type'        => 'image',
-                        'label'       => esc_html__( 'Upload an icon image', 'education-center' ),
-                        'description' => esc_html__( 'Recommended icon size is 47px by 60px in png format', 'education-center' )
+                        'label'       => esc_html__( 'Upload an icon image', 'baizonn-learning-center' ),
+                        'description' => esc_html__( 'Recommended icon size is 47px by 60px in png format', 'baizonn-learning-center' )
                     ),
                     'title' => array(
                         'type'        => 'text',
-                        'label'       => esc_html__( 'Enter Title', 'education-center' ),
+                        'label'       => esc_html__( 'Enter Title', 'baizonn-learning-center' ),
                     ),
                     'description' => array(
                         'type'        => 'text',
-                        'label'       => esc_html__( 'Enter short description', 'education-center' ),
+                        'label'       => esc_html__( 'Enter short description', 'baizonn-learning-center' ),
                     ),
                 ),
                 'row_label' => array(
                     'type'  => 'field',
-                    'value' => esc_html__( 'Icon Text', 'education-center' ),
+                    'value' => esc_html__( 'Icon Text', 'baizonn-learning-center' ),
                     'field' => 'text'
                 ),                     
             )

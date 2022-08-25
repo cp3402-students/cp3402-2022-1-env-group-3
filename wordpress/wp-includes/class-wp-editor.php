@@ -1195,8 +1195,8 @@ final class _WP_Editors {
 				'Name'                                 => _x( 'Name', 'Name of link anchor (TinyMCE)' ),
 				'Anchor'                               => _x( 'Anchor', 'Link anchor (TinyMCE)' ),
 				'Anchors'                              => _x( 'Anchors', 'Link anchors (TinyMCE)' ),
-				'Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores.' =>
-					__( 'Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores.' ),
+				'Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or baizonn-learning-center.' =>
+					__( 'Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or baizonn-learning-center.' ),
 				'Id'                                   => _x( 'Id', 'Id for link anchor (TinyMCE)' ),
 
 				// Fullpage plugin.

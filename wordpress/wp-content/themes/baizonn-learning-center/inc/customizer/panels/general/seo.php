@@ -11,7 +11,7 @@ function education_center_customize_register_general_seo( $wp_customize ) {
     $wp_customize->add_section(
         'seo_settings',
         array(
-            'title'    => __( 'Breadcrumb Settings', 'education-center' ),
+            'title'    => __( 'Breadcrumb Settings', 'baizonn-learning-center' ),
             'priority' => 40,
             'panel'    => 'general_settings',
         )
@@ -32,8 +32,8 @@ function education_center_customize_register_general_seo( $wp_customize ) {
 			'ed_breadcrumb',
 			array(
 				'section'     => 'seo_settings',
-				'label'	      => __( 'Enable Breadcrumb', 'education-center' ),
-                'description' => __( 'Enable to show breadcrumb in inner pages.', 'education-center' ),
+				'label'	      => __( 'Enable Breadcrumb', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show breadcrumb in inner pages.', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -42,7 +42,7 @@ function education_center_customize_register_general_seo( $wp_customize ) {
     $wp_customize->add_setting(
         'home_text',
         array(
-            'default'           => __( 'Home', 'education-center' ),
+            'default'           => __( 'Home', 'baizonn-learning-center' ),
             'sanitize_callback' => 'sanitize_text_field' 
         )
     );
@@ -52,7 +52,7 @@ function education_center_customize_register_general_seo( $wp_customize ) {
         array(
             'type'    => 'text',
             'section' => 'seo_settings',
-            'label'   => __( 'Breadcrumb Home Text', 'education-center' ),
+            'label'   => __( 'Breadcrumb Home Text', 'baizonn-learning-center' ),
         )
     );  
     /** SEO Settings Ends */

@@ -555,7 +555,7 @@ function wp_iframe( $content_func, ...$args ) {
 	 *
 	 * @since 2.9.0
 	 */
-	do_action( 'admin_print_styles-media-upload-popup' );  // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'admin_print_styles-media-upload-popup' );  // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 
 	/** This action is documented in wp-admin/admin-header.php */
 	do_action( 'admin_print_styles' );
@@ -565,7 +565,7 @@ function wp_iframe( $content_func, ...$args ) {
 	 *
 	 * @since 2.9.0
 	 */
-	do_action( 'admin_print_scripts-media-upload-popup' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'admin_print_scripts-media-upload-popup' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 
 	/** This action is documented in wp-admin/admin-header.php */
 	do_action( 'admin_print_scripts' );
@@ -576,7 +576,7 @@ function wp_iframe( $content_func, ...$args ) {
 	 *
 	 * @since 2.9.0
 	 */
-	do_action( 'admin_head-media-upload-popup' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'admin_head-media-upload-popup' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 
 	/** This action is documented in wp-admin/admin-header.php */
 	do_action( 'admin_head' );
@@ -2133,7 +2133,7 @@ function media_upload_form( $errors = null ) {
 	 *
 	 * @since 2.6.0
 	 */
-	do_action( 'pre-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'pre-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 
 	$post_params = array(
 		'post_id'  => $post_id,
@@ -2223,7 +2223,7 @@ function media_upload_form( $errors = null ) {
 	 * @since 2.6.0 As 'pre-flash-upload-ui'
 	 * @since 3.3.0
 	 */
-	do_action( 'pre-plupload-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'pre-plupload-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 
 	?>
 	<div id="drag-drop-area">
@@ -2240,7 +2240,7 @@ function media_upload_form( $errors = null ) {
 	 * @since 2.6.0 As 'post-flash-upload-ui'
 	 * @since 3.3.0
 	 */
-	do_action( 'post-plupload-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'post-plupload-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 	?>
 	</div>
 
@@ -2251,7 +2251,7 @@ function media_upload_form( $errors = null ) {
 	 *
 	 * @since 2.6.0
 	 */
-	do_action( 'pre-html-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'pre-html-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 
 	?>
 	<p id="async-upload-wrap">
@@ -2267,7 +2267,7 @@ function media_upload_form( $errors = null ) {
 	 *
 	 * @since 2.6.0
 	 */
-	do_action( 'post-html-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'post-html-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 
 	?>
 	</div>
@@ -2287,7 +2287,7 @@ function media_upload_form( $errors = null ) {
 	 *
 	 * @since 2.6.0
 	 */
-	do_action( 'post-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( 'post-upload-ui' ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.Usebaizonn-learning-center
 }
 
 /**

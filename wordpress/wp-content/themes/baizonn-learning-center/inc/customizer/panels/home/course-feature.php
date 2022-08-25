@@ -12,7 +12,7 @@ function education_center_customize_register_home_course_feature( $wp_customize 
 	$wp_customize->add_section( 
         'course_feature_home', 
 	    array(
-	        'title'         => esc_html__( 'Course Features Section', 'education-center' ),
+	        'title'         => esc_html__( 'Course Features Section', 'baizonn-learning-center' ),
 	        'priority'      => 25,
             'panel'         => 'frontpage_settings',
 	    ) 
@@ -33,8 +33,8 @@ function education_center_customize_register_home_course_feature( $wp_customize 
 			'ed_course_feature',
 			array(
 				'section'     => 'course_feature_home',
-				'label'	      => __( 'Enable Course Feature Section', 'education-center' ),
-                'description' => __( 'Enable to show course feature section in your homepage', 'education-center' ),
+				'label'	      => __( 'Enable Course Feature Section', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show course feature section in your homepage', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -53,7 +53,7 @@ function education_center_customize_register_home_course_feature( $wp_customize 
         'features_title',
         array(
             'section'         => 'course_feature_home',
-            'label'           => __( 'Section Title', 'education-center' ),
+            'label'           => __( 'Section Title', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -77,7 +77,7 @@ function education_center_customize_register_home_course_feature( $wp_customize 
         'features_subtitle',
         array(
             'section'         => 'course_feature_home',
-            'label'           => __( 'Section Subtitle', 'education-center' ),
+            'label'           => __( 'Section Subtitle', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -104,24 +104,24 @@ function education_center_customize_register_home_course_feature( $wp_customize 
 			'course_feature_repeater',
 			array(
 				'section' => 'course_feature_home',				
-				'label'	  => __( 'Add Features', 'education-center' ),
+				'label'	  => __( 'Add Features', 'baizonn-learning-center' ),
 				'fields'  => array(
                     'image' => array(
                         'type'    => 'image',
-                        'label'   => __( 'Upload Icon/Image', 'education-center' ),
+                        'label'   => __( 'Upload Icon/Image', 'baizonn-learning-center' ),
 					),
                     'title' => array(
                         'type'    => 'text',
-                        'label'   => __( 'Enter Title', 'education-center' ),
+                        'label'   => __( 'Enter Title', 'baizonn-learning-center' ),
                     ),
                     'content' => array(
                         'type'    => 'text',
-                        'label'   => __( 'Enter Content', 'education-center' ),
+                        'label'   => __( 'Enter Content', 'baizonn-learning-center' ),
                     ),
                 ),
                 'row_label' => array(
                     'type' => 'field',
-                    'value' => esc_html__( 'feature', 'education-center' ),
+                    'value' => esc_html__( 'feature', 'baizonn-learning-center' ),
                     'field' => 'title',
                 ),
                 'choices' => array(
@@ -145,7 +145,7 @@ function education_center_customize_register_home_course_feature( $wp_customize 
 			$wp_customize, 
 			'course_featured_image', 
 			array(
-				'label'      => __( 'Upload the image', 'education-center' ),
+				'label'      => __( 'Upload the image', 'baizonn-learning-center' ),
 				'section'    => 'course_feature_home',
 			)
     	)

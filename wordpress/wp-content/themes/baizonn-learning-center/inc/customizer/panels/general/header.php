@@ -12,7 +12,7 @@ function education_center_customize_register_general_header( $wp_customize ) {
     $wp_customize->add_section(
         'header_settings',
         array(
-            'title'    => __( 'Header Settings', 'education-center' ),
+            'title'    => __( 'Header Settings', 'baizonn-learning-center' ),
             'priority' => 20,
             'panel'    => 'general_settings',
         )
@@ -33,8 +33,8 @@ function education_center_customize_register_general_header( $wp_customize ) {
             'ed_header_search',
             array(
                 'section'       => 'header_settings',
-                'label'         => __( 'Header Search', 'education-center' ),
-                'description'   => __( 'Enable to show search in header', 'education-center' ),
+                'label'         => __( 'Header Search', 'baizonn-learning-center' ),
+                'description'   => __( 'Enable to show search in header', 'baizonn-learning-center' ),
             )
         )	
     );
@@ -54,8 +54,8 @@ function education_center_customize_register_general_header( $wp_customize ) {
             'ed_transparent_header',
             array(
                 'section'       => 'header_settings',
-                'label'         => __( 'Transparent Header', 'education-center' ),
-                'description'   => __( 'Enable to make header transparent in the front page.', 'education-center' ),
+                'label'         => __( 'Transparent Header', 'baizonn-learning-center' ),
+                'description'   => __( 'Enable to make header transparent in the front page.', 'baizonn-learning-center' ),
             )
         )	
     );
@@ -73,8 +73,8 @@ function education_center_customize_register_general_header( $wp_customize ) {
     $wp_customize->add_control(
         'phone',
         array(
-            'label'       => __( 'Phone Number', 'education-center' ),
-            'description' => __( 'Add phone no. in header.', 'education-center' ),
+            'label'       => __( 'Phone Number', 'baizonn-learning-center' ),
+            'description' => __( 'Add phone no. in header.', 'baizonn-learning-center' ),
             'section'     => 'header_settings',
             'type'        => 'text',
         )
@@ -99,8 +99,8 @@ function education_center_customize_register_general_header( $wp_customize ) {
     $wp_customize->add_control(
         'email',
         array(
-            'label'       => __( 'Email', 'education-center' ),
-            'description' => __( 'Add email in header.', 'education-center' ),
+            'label'       => __( 'Email', 'baizonn-learning-center' ),
+            'description' => __( 'Add email in header.', 'baizonn-learning-center' ),
             'section'     => 'header_settings',
             'type'        => 'text',
         )
@@ -123,7 +123,7 @@ function education_center_customize_register_general_header( $wp_customize ) {
     $wp_customize->add_control(
         'header_btn_lbl',
         array(
-            'label'             => __( 'Button Label', 'education-center' ),
+            'label'             => __( 'Button Label', 'baizonn-learning-center' ),
             'section'           => 'header_settings',
             'type'              => 'text',
         )
@@ -145,7 +145,7 @@ function education_center_customize_register_general_header( $wp_customize ) {
     $wp_customize->add_control(
         'header_btn_link',
         array(
-            'label'           => __( 'Button Link', 'education-center' ),
+            'label'           => __( 'Button Link', 'baizonn-learning-center' ),
             'section'         => 'header_settings',
             'type'            => 'text',
         )
@@ -166,8 +166,8 @@ function education_center_customize_register_general_header( $wp_customize ) {
             'ed_social_links',
             array(
                 'section'       => 'header_settings',
-                'label'         => __( 'Enable Social Links', 'education-center' ),
-                'description'   => __( 'Enable to show social links at top. Social links are displayed in header layout one, three and seven only', 'education-center' ),
+                'label'         => __( 'Enable Social Links', 'baizonn-learning-center' ),
+                'description'   => __( 'Enable to show social links at top. Social links are displayed in header layout one, three and seven only', 'baizonn-learning-center' ),
             )
         )	
     );
@@ -190,26 +190,26 @@ function education_center_customize_register_general_header( $wp_customize ) {
 			'social_links',
 			array(
 				'section'       => 'header_settings',
-				'label'         => esc_html__( 'Social Links', 'education-center' ),
+				'label'         => esc_html__( 'Social Links', 'baizonn-learning-center' ),
 				'fields'  => array(
                     'icon' => array(
                         'type'        => 'select',
-                        'label'       => esc_html__( 'Social Media', 'education-center' ),
+                        'label'       => esc_html__( 'Social Media', 'baizonn-learning-center' ),
                         'choices'     => education_center_get_svg_icons()
                     ),
                     'link' => array(
                         'type'        => 'url',
-                        'label'       => esc_html__( 'Link', 'education-center' ),
-                        'description' => esc_html__( 'Example: https://facebook.com', 'education-center' ),
+                        'label'       => esc_html__( 'Link', 'baizonn-learning-center' ),
+                        'description' => esc_html__( 'Example: https://facebook.com', 'baizonn-learning-center' ),
                     ),
                     'checkbox' => array(
                         'type'        => 'checkbox',
-                        'label'       => esc_html__( 'Open link in new tab', 'education-center' ),
+                        'label'       => esc_html__( 'Open link in new tab', 'baizonn-learning-center' ),
                     )
                 ),
                 'row_label' => array(
                     'type'  => 'field',
-                    'value' => esc_html__( 'links', 'education-center' ),
+                    'value' => esc_html__( 'links', 'baizonn-learning-center' ),
                     'field' => 'link'
                 ),
 			)

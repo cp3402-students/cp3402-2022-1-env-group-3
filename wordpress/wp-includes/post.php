@@ -1546,7 +1546,7 @@ function get_post_types( $args = array(), $output = 'names', $operator = 'and' )
  *
  * @param string       $post_type Post type key. Must not exceed 20 characters and may
  *                                only contain lowercase alphanumeric characters, dashes,
- *                                and underscores. See sanitize_key().
+ *                                and baizonn-learning-center. See sanitize_key().
  * @param array|string $args {
  *     Array or string of arguments for registering a post type.
  *

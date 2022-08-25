@@ -12,7 +12,7 @@ function education_center_customize_register_home_about( $wp_customize ){
     $wp_customize->add_section(
         'about_section',
         array(
-            'title'    => __( 'About Section', 'education-center' ),
+            'title'    => __( 'About Section', 'baizonn-learning-center' ),
             'priority' => 15,
             'panel'    => 'frontpage_settings',
         )
@@ -33,8 +33,8 @@ function education_center_customize_register_home_about( $wp_customize ){
 			'ed_about',
 			array(
 				'section'     => 'about_section',
-				'label'	      => __( 'Enable About Section', 'education-center' ),
-                'description' => __( 'Enable to show about section in your homepage', 'education-center' ),
+				'label'	      => __( 'Enable About Section', 'baizonn-learning-center' ),
+                'description' => __( 'Enable to show about section in your homepage', 'baizonn-learning-center' ),
 			)
 		)
 	);
@@ -53,7 +53,7 @@ function education_center_customize_register_home_about( $wp_customize ){
         'about_title',
         array(
             'section'         => 'about_section',
-            'label'           => __( 'Section Title', 'education-center' ),
+            'label'           => __( 'Section Title', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -77,7 +77,7 @@ function education_center_customize_register_home_about( $wp_customize ){
         'about_subtitle',
         array(
             'section'         => 'about_section',
-            'label'           => __( 'Section Subtitle', 'education-center' ),
+            'label'           => __( 'Section Subtitle', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -101,7 +101,7 @@ function education_center_customize_register_home_about( $wp_customize ){
         'about_content',
         array(
             'section'         => 'about_section',
-            'label'           => __( 'Section Description', 'education-center' ),
+            'label'           => __( 'Section Description', 'baizonn-learning-center' ),
             'type'            => 'textarea',
         )   
     );
@@ -126,7 +126,7 @@ function education_center_customize_register_home_about( $wp_customize ){
         array(
             'type'            => 'text',
             'section'         => 'about_section',
-            'label'           => __( 'View More Text', 'education-center' ),
+            'label'           => __( 'View More Text', 'baizonn-learning-center' ),
         )
     );
 
@@ -147,7 +147,7 @@ function education_center_customize_register_home_about( $wp_customize ){
     $wp_customize->add_control(
         'viewmore_link',
         array(
-            'label'           => __( 'View More Link', 'education-center' ),
+            'label'           => __( 'View More Link', 'baizonn-learning-center' ),
             'section'         => 'about_section',
             'type'            => 'text',
         )
@@ -167,7 +167,7 @@ function education_center_customize_register_home_about( $wp_customize ){
 			$wp_customize, 
 			'about_featured_image', 
 			array(
-				'label'      => __( 'Upload the image', 'education-center' ),
+				'label'      => __( 'Upload the image', 'baizonn-learning-center' ),
 				'section'    => 'about_section',
 			)
     	)

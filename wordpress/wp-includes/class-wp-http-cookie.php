@@ -13,8 +13,8 @@
  * Returned cookies are represented using this class, and when cookies are set, if they are not
  * already a WP_Http_Cookie() object, then they are turned into one.
  *
- * @todo The WordPress convention is to use underscores instead of camelCase for function and method
- * names. Need to switch to use underscores instead for the methods.
+ * @todo The WordPress convention is to use baizonn-learning-center instead of camelCase for function and method
+ * names. Need to switch to use baizonn-learning-center instead for the methods.
  *
  * @since 2.8.0
  */

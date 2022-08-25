@@ -9,7 +9,7 @@ function education_center_contact_page_info( $wp_customize ){
     
 	$wp_customize->add_section( 'contact_info_section', 
 	    array(
-	        'title'         => esc_html__( 'Contact Details Section', 'education-center' ),
+	        'title'         => esc_html__( 'Contact Details Section', 'baizonn-learning-center' ),
 	        'priority'      => 10,
             'panel'         => 'contact_page_settings',
 	    ) 
@@ -29,7 +29,7 @@ function education_center_contact_page_info( $wp_customize ){
         'contact_title',
         array(
             'section'         => 'contact_info_section',
-            'label'           => __( 'Section Title', 'education-center' ),
+            'label'           => __( 'Section Title', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -53,7 +53,7 @@ function education_center_contact_page_info( $wp_customize ){
         'contact_subtitle',
         array(
             'section'         => 'contact_info_section',
-            'label'           => __( 'Section Subtitle', 'education-center' ),
+            'label'           => __( 'Section Subtitle', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -77,7 +77,7 @@ function education_center_contact_page_info( $wp_customize ){
         'contact_content',
         array(
             'section'         => 'contact_info_section',
-            'label'           => __( 'Section Content', 'education-center' ),
+            'label'           => __( 'Section Content', 'baizonn-learning-center' ),
             'type'            => 'text',
         )   
     );
@@ -100,7 +100,7 @@ function education_center_contact_page_info( $wp_customize ){
 		'location_title',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Location Title', 'education-center' ),
+			'label'             => __( 'Location Title', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -122,7 +122,7 @@ function education_center_contact_page_info( $wp_customize ){
 		'location',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Location Description', 'education-center' ),
+			'label'             => __( 'Location Description', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -140,7 +140,7 @@ function education_center_contact_page_info( $wp_customize ){
 		'mail_title',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Mail Title', 'education-center' ),
+			'label'             => __( 'Mail Title', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -162,8 +162,8 @@ function education_center_contact_page_info( $wp_customize ){
 		'mail_description',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Email Address', 'education-center' ),
-			'description'		=> __( 'You can add multiple emails by seperating it with comma. For example: xyz@gmail.com, abc@yahoo.com', 'education-center' ), 
+			'label'             => __( 'Email Address', 'baizonn-learning-center' ),
+			'description'		=> __( 'You can add multiple emails by seperating it with comma. For example: xyz@gmail.com, abc@yahoo.com', 'baizonn-learning-center' ), 
 			'type'              => 'text',
 		)
 	);
@@ -181,7 +181,7 @@ function education_center_contact_page_info( $wp_customize ){
 		'phone_title',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Phone Us Title', 'education-center' ),
+			'label'             => __( 'Phone Us Title', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -203,8 +203,8 @@ function education_center_contact_page_info( $wp_customize ){
 		'phone_number',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Phone Number', 'education-center' ),
-			'description'       => __( 'You can add multiple phone number seperating with comma', 'education-center' ),
+			'label'             => __( 'Phone Number', 'baizonn-learning-center' ),
+			'description'       => __( 'You can add multiple phone number seperating with comma', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -222,7 +222,7 @@ function education_center_contact_page_info( $wp_customize ){
 		'contact_hours',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Contact Timing Title', 'education-center' ),
+			'label'             => __( 'Contact Timing Title', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);
@@ -244,8 +244,8 @@ function education_center_contact_page_info( $wp_customize ){
 		'contact_hrs_content',
 		array(
 			'section'           => 'contact_info_section',
-			'label'             => __( 'Contact Timing Content', 'education-center' ),
-			'description'       => __( 'You can add multiple contact hours seperating with comma. For example: Monday - Friday: 09.00 - 20.00, Sunday & Saturday: 10.30 - 22.30', 'education-center' ),
+			'label'             => __( 'Contact Timing Content', 'baizonn-learning-center' ),
+			'description'       => __( 'You can add multiple contact hours seperating with comma. For example: Monday - Friday: 09.00 - 20.00, Sunday & Saturday: 10.30 - 22.30', 'baizonn-learning-center' ),
 			'type'              => 'text',
 		)
 	);

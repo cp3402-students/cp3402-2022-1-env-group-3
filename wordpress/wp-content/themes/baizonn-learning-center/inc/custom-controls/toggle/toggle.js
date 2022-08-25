@@ -1,4 +1,4 @@
-wp.customize.controlConstructor['education-center-toggle'] = wp.customize.Control.extend({
+wp.customize.controlConstructor['baizonn-learning-center-toggle'] = wp.customize.Control.extend({
 	ready: function(){
 		'use strict';
 

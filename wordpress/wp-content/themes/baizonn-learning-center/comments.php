@@ -29,7 +29,7 @@ if ( post_password_required() ) {
 			<?php
 				printf( // WPCS: XSS OK.
 					/* translators: 1: comment count number. */
-					esc_html( _nx( '%1$s Comment', '%1$s Comments', get_comments_number(), 'comments title', 'education-center' ) ),
+					esc_html( _nx( '%1$s Comment', '%1$s Comments', get_comments_number(), 'comments title', 'baizonn-learning-center' ) ),
 					number_format_i18n( get_comments_number() )
 				);
 			?>
@@ -50,7 +50,7 @@ if ( post_password_required() ) {
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) : ?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'education-center' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'baizonn-learning-center' ); ?></p>
 		<?php
 		endif;
 

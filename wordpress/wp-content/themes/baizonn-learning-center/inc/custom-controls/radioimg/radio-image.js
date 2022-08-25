@@ -1,4 +1,4 @@
-wp.customize.controlConstructor['education-center-radio-image'] = wp.customize.Control.extend({
+wp.customize.controlConstructor['baizonn-learning-center-radio-image'] = wp.customize.Control.extend({
 	ready: function() {
 		'use strict';
 		var control = this;

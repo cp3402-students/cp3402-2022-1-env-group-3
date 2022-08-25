@@ -27,7 +27,7 @@
         <?php 
             the_content(); 
             wp_link_pages( array(
-                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'education-center' ),
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'baizonn-learning-center' ),
                 'after'  => '</div>',
             ) );
         ?>

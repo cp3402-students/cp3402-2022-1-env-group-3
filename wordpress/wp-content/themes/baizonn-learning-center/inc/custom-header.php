@@ -37,7 +37,7 @@ if( ! function_exists( 'education_center_custom_header_setup' ) ) :
 			'default-image' => array(
 				'url'           => '%s/assets/img/banner.jpg',
 				'thumbnail_url' => '%s/assets/img/banner.jpg',
-				'description'   => __( 'Default Header Image', 'education-center' ),
+				'description'   => __( 'Default Header Image', 'baizonn-learning-center' ),
 			),
 		) );
 

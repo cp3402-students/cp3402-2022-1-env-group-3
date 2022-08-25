@@ -31,9 +31,9 @@ if( $ed_feat_course && education_center_is_tutor_lms_activated() ){ ?>
                                 <div class="f-wrap__content">
                                     <div class="f-image">
                                         <?php if( has_post_thumbnail() ){
-                                            the_post_thumbnail( 'education-center-featured-posts', array( 'itemprop' => 'image' ) );
+                                            the_post_thumbnail( 'baizonn-learning-center-featured-posts', array( 'itemprop' => 'image' ) );
                                         }else{
-                                            education_center_get_fallback_svg( 'education-center-featured-posts' );
+                                            education_center_get_fallback_svg( 'baizonn-learning-center-featured-posts' );
                                         } ?>
                                     </div>
                                     <div class="f-info">
@@ -44,7 +44,7 @@ if( $ed_feat_course && education_center_is_tutor_lms_activated() ){ ?>
                                         <span class="f-writer"><?php education_center_posted_by(); ?></span>
                                     </div>
                                     <div class="f-wrap__bottom">
-                                        <span class="f-wrap__price"><?php echo ( $course_lvl == 'paid' ) ? esc_html__( 'Paid','education-center' ) : esc_html__( 'Free','education-center' ); ?></span>
+                                        <span class="f-wrap__price"><?php echo ( $course_lvl == 'paid' ) ? esc_html__( 'Paid','baizonn-learning-center' ) : esc_html__( 'Free','baizonn-learning-center' ); ?></span>
                                         <?php if( $btn_lbl ) echo '<a href="' . get_permalink( get_the_ID() ) . '" class="btn-link">' . esc_html( $btn_lbl ) . '</a>'; ?>
                                     </div>
                                 </div>

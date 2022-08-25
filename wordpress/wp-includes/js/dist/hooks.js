@@ -79,7 +79,7 @@ function validateNamespace(namespace) {
 
   if (!/^[a-zA-Z][a-zA-Z0-9_.\-\/]*$/.test(namespace)) {
     // eslint-disable-next-line no-console
-    console.error('The namespace can only contain numbers, letters, dashes, periods, underscores and slashes.');
+    console.error('The namespace can only contain numbers, letters, dashes, periods, baizonn-learning-center and slashes.');
     return false;
   }
 
@@ -93,7 +93,7 @@ function validateNamespace(namespace) {
  * Validate a hookName string.
  *
  * @param {string} hookName The hook name to validate. Should be a non empty string containing
- *                          only numbers, letters, dashes, periods and underscores. Also,
+ *                          only numbers, letters, dashes, periods and baizonn-learning-center. Also,
  *                          the hook name cannot begin with `__`.
  *
  * @return {boolean} Whether the hook name is valid.
@@ -113,7 +113,7 @@ function validateHookName(hookName) {
 
   if (!/^[a-zA-Z][a-zA-Z0-9_.-]*$/.test(hookName)) {
     // eslint-disable-next-line no-console
-    console.error('The hook name can only contain numbers, letters, dashes, periods and underscores.');
+    console.error('The hook name can only contain numbers, letters, dashes, periods and baizonn-learning-center.');
     return false;
   }
 

@@ -2307,7 +2307,7 @@ function get_usermeta( $user_id, $meta_key = '' ) {
  * Update metadata of user.
  *
  * There is no need to serialize values, they will be serialized if it is
- * needed. The metadata key can only be a string with underscores. All else will
+ * needed. The metadata key can only be a string with baizonn-learning-center. All else will
  * be removed.
  *
  * Will remove the metadata, if the meta value is empty.
