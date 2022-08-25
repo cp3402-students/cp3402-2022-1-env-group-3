@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package education_center
+ * @package Baizonn_Learning_Center
  */
 
 get_header(); ?>

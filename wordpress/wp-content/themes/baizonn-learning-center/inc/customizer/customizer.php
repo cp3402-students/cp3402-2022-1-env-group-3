@@ -47,8 +47,6 @@ add_action( 'customize_controls_enqueue_scripts', 'education_center_customize_sc
 
 $education_center_panels  = array( 'general', 'home', 'contact' );
 
-$education_center_sections  = array( 'layout', 'theme-info', 'footer' );
-
 $education_center_sub_sections = array(
 	'general'		=> array ( 'header', 'appearance', 'seo', 'post-page' ),
 	'home'			=> array ( 'banner', 'banner-box', 'about', 'course-feature', 'blog-posts', 'cta', 'video', 'featured' ),

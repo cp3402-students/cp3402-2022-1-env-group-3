@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package education_center
+ * @package Baizonn_Learning_Center
  */
 
 /*

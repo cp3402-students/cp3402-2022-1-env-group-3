@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Education_Center
+ * @package Baizonn_Learning_Center
  */
 
 get_header(); ?>

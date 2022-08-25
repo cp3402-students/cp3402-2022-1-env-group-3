@@ -2,7 +2,7 @@
 /**
  * Front Page
  * 
- * @package Education_Center
+ * @package Baizonn_Learning_Center
  */
 $home_sections = array( 'banner-box', 'about', 'course-feature', 'cta', 'featured', 'video', 'blog' );
 

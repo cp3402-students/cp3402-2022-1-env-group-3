@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package education_center
+ * @package Baizonn_Learning_Center
  */
 
 $sidebar = education_center_sidebar();

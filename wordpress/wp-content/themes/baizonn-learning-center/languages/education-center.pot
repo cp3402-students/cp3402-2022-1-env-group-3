@@ -768,38 +768,6 @@ msgstr ""
 msgid "This is the general sidebar layout for whole site."
 msgstr ""
 
-#: inc/customizer/section/theme-info.php:13
-msgid "Information Links"
-msgstr ""
-
-#: inc/customizer/section/theme-info.php:27
-msgid "<li>View documentation: %1$sClick here.%2$s</li>"
-msgstr ""
-
-#: inc/customizer/section/theme-info.php:28
-msgid "<li>Theme info: %1$sClick here.%2$s</li>"
-msgstr ""
-
-#: inc/customizer/section/theme-info.php:29
-msgid "<li>Support ticket: %1$sClick here.%2$s</li>"
-msgstr ""
-
-#: inc/customizer/section/theme-info.php:30
-msgid "<li>More WordPress Themes: %1$sClick here.%2$s</li>"
-msgstr ""
-
-#: inc/customizer/section/theme-info.php:36
-msgid "Important Links"
-msgstr ""
-
-#: inc/customizer/section/theme-info.php:129
-msgid "Pro Available"
-msgstr ""
-
-#: inc/customizer/section/theme-info.php:131
-msgid "VIEW PRO THEME"
-msgstr ""
-
 #: inc/extra-functions.php:122
 msgid "Click here to add a menu"
 msgstr ""

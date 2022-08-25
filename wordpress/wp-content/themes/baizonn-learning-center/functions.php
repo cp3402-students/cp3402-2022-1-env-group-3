@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Education_Center
+ * @package Baizonn_Learning_Center
  */
 
 /**

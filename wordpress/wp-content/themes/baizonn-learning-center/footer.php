@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Education_Center
+ * @package Baizonn_Learning_Center
  */
 
 ?>
