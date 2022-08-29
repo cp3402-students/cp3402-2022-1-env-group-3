@@ -335,6 +335,7 @@ input[type="submit"], .tutor-public-course-start-learning a, .single_add_to_cart
 .page .site-main .entry-content h5,
 .page .site-main .entry-content h6 {
   font-weight: 500;
+  background-color: red;
 }
 
 .breadcrumb-wrapper, .btn-link, .comment-title,
@@ -886,7 +887,7 @@ textarea:focus {
 }
 
 select {
-  border: 1px solid #color-black;
+  border: 1px solid black;
 }
 
 .alignleft {
@@ -931,17 +932,12 @@ select {
   margin-left: 12px;
   padding-left: 12px;
   position: relative;
-  last-child-margin-left: 0;
-  last-child-padding-left: 0;
-  last-child-after-display: none;
 }
 
 .entry-meta .category a {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  last-child-margin-left: 0;
-  last-child-after-display: none;
 }
 
 .entry-meta .category a ::after {
@@ -3405,10 +3401,6 @@ body.admin-bar .skip-link:focus {
   right: 50%;
 }
 
-.site-toggled .site-header .toggle-btn.toggle-main {
-  opacity: 0;
-  opacity-visibility: hidden;
-}
 
 .site-header .social-networks li a {
   -ms-box-shadow: none !important;
@@ -3965,8 +3957,6 @@ body.admin-bar .skip-link:focus {
 
 .widget .widget-title {
   font-size: 1.22rem;
-  font-size-line-heigth: 36px;
-  font-size-margin-bottom: 20px;
   color: #000;
 }
 
@@ -4162,7 +4152,6 @@ body.admin-bar .skip-link:focus {
 
 .widget.widget_recent_entries li .wp-block-latest-posts__post-author, .widget.widget_recent_entries li .wp-block-latest-posts__post-date, .widget .wp-block-latest-posts__list li .wp-block-latest-posts__post-author, .widget .wp-block-latest-posts__list li .wp-block-latest-posts__post-date {
   font-size: 14px;
-  @exetnd %medium {}  color: var(--ecp-primary-color-education);
 }
 
 .widget.widget_recent_entries ul, .widget .wp-block-latest-posts__list ul {
@@ -4363,7 +4352,6 @@ body.admin-bar .skip-link:focus {
 
 #secondary .widget h2, #secondary .widget-title {
   font-size: 1.22rem;
-  line-heigth: 36px;
   margin-bottom: 20px;
 }
 
@@ -7880,10 +7868,6 @@ li .star-rating > span::before {
 
 .woocommerce-error {
   margin-right: 0;
-}
-
-.woocommerce-error, .woocommerce-info, .woocommerce-message {
-  paddong: 1em 2em;
 }
 
 .woocommerce-checkout li::before {

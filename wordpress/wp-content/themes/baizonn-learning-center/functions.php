@@ -50,8 +50,6 @@ require get_template_directory() . '/inc/metabox.php';
 /**
  * Plugin Recommendation
 */
-require get_template_directory() . '/inc/tgmpa/recommended-plugins.php';
-
 /**
  * Add theme compatibility function for woocommerce if active
 */

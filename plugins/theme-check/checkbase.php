@@ -370,7 +370,7 @@ function tc_adapt_checks_for_fse_themes( $php_files, $css_files, $other_files ) 
 			|| $check instanceof Post_Thumbnail_Check
 			|| $check instanceof Theme_Support_Check
 			|| $check instanceof Editor_Style_Check
-			|| $check instanceof baizonn-learning-center_Check
+			|| $check instanceof baizonn_learning-center_Check
 			|| $check instanceof Constants_Check
 			|| $check instanceof Customizer_Check
 			|| $check instanceof Post_Format_Check

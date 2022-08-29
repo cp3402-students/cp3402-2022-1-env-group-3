@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function baizonn-learning-center_jetpack_setup() {
+function baizonn_learning_center_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'baizonn-learning-center_infinite_scroll_render',
+			'render'    => 'baizonn_learning-center_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -48,13 +48,13 @@ function baizonn-learning-center_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'baizonn-learning-center_jetpack_setup' );
+add_action( 'after_setup_theme', 'baizonn_learning-center_jetpack_setup' );
 
-if ( ! function_exists( 'baizonn-learning-center_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'baizonn_learning-center_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function baizonn-learning-center_infinite_scroll_render() {
+	function baizonn_learning_center_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

@@ -928,17 +928,13 @@ select {
   margin-right: 12px;
   padding-right: 12px;
   position: relative;
-  last-child-margin-right: 0;
-  last-child-padding-right: 0;
-  last-child-after-display: none;
 }
 
 .entry-meta .category a {
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
-  last-child-margin-right: 0;
-  last-child-after-display: none;
+
 }
 
 .entry-meta .category a ::after {
@@ -3404,7 +3400,6 @@ body.admin-bar .skip-link:focus {
 
 .site-toggled .site-header .toggle-btn.toggle-main {
   opacity: 0;
-  opacity-visibility: hidden;
 }
 
 .site-header .social-networks li a {
@@ -3962,8 +3957,6 @@ body.admin-bar .skip-link:focus {
 
 .widget .widget-title {
   font-size: 1.22rem;
-  font-size-line-heigth: 36px;
-  font-size-margin-bottom: 20px;
   color: #000;
 }
 
@@ -4159,7 +4152,6 @@ body.admin-bar .skip-link:focus {
 
 .widget.widget_recent_entries li .wp-block-latest-posts__post-author, .widget.widget_recent_entries li .wp-block-latest-posts__post-date, .widget .wp-block-latest-posts__list li .wp-block-latest-posts__post-author, .widget .wp-block-latest-posts__list li .wp-block-latest-posts__post-date {
   font-size: 14px;
-  @exetnd %medium {}  color: var(--ecp-primary-color-education);
 }
 
 .widget.widget_recent_entries ul, .widget .wp-block-latest-posts__list ul {
@@ -4360,7 +4352,6 @@ body.admin-bar .skip-link:focus {
 
 #secondary .widget h2, #secondary .widget-title {
   font-size: 1.22rem;
-  line-heigth: 36px;
   margin-bottom: 20px;
 }
 
@@ -7877,10 +7868,6 @@ li .star-rating > span::before {
 
 .woocommerce-error {
   margin-left: 0;
-}
-
-.woocommerce-error, .woocommerce-info, .woocommerce-message {
-  paddong: 1em 2em;
 }
 
 .woocommerce-checkout li::before {
