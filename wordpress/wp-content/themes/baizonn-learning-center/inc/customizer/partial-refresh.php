@@ -110,7 +110,7 @@ function education_center_ed_author_link(){
     if( ! $ed_author_link ) {
         echo '<span class="author-link">'; 
         esc_html_e( 'Developed By ', 'baizonn-learning-center' );
-        echo '<a href="' . esc_url( 'https://glthemes.com/' ) .'" rel="nofollow" target="_blank">' . esc_html__( 'Good Looking Themes', 'baizonn-learning-center' ) . '</a>.';
+        echo '<a href="' . esc_url( 'https://github.com/cp3402-students/cp3402-2022-1-site-group-3' ) .'" rel="nofollow" target="_blank">' . esc_html__( 'Group 3', 'baizonn-learning-center' ) . '</a>.';
         echo '</span>';
     } 
 }
