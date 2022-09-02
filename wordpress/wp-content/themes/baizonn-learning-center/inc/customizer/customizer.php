@@ -49,7 +49,7 @@ $education_center_panels  = array( 'general', 'home', 'contact' );
 
 $education_center_sub_sections = array(
 	'general'		=> array ( 'header', 'appearance', 'seo', 'post-page' ),
-	'home'			=> array ( 'banner', 'banner-box', 'about', 'course-feature', 'blog-posts', 'cta', 'video', 'featured' ),
+	'home'			=> array ( 'banner' ),
 	'contact'		=> array ( 'contact-detail', 'contact-form', 'contact-map' ),
 );
 
