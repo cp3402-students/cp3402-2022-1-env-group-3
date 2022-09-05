@@ -13,9 +13,9 @@
     <div class="blog__card">
         <figure class="blog__img">
             <?php if( has_post_thumbnail() ){
-                the_post_thumbnail( 'baizonn-learning-center-search', array( 'itemprop' => 'image' ) );
+                the_post_thumbnail( 'education-center-search', array( 'itemprop' => 'image' ) );
             }else{
-                education_center_get_fallback_svg( 'baizonn-learning-center-search' );
+                education_center_get_fallback_svg( 'education-center-search' );
             } ?>
         </figure>
         <?php education_center_blog_info(); ?>
